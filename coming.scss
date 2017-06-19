@@ -14,6 +14,11 @@ html, body {
   width: 100vw;
 }
 
+<<<<<<< refs/remotes/originmaster
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> HEAD~0
 div.projectcontainer {
   width: 100%;
   position: fixed;
@@ -61,20 +66,42 @@ div.projectcontainer {
   }
 }
 
+<<<<<<< refs/remotes/originmaster
+=======
+>>>>>>> hi
+>>>>>>> HEAD~0
 header {
   width: 100%;
   float: left;
   margin: 0;
 
   div {
+<<<<<<< refs/remotes/originmaster
 	text-align: center;
 	width: 100%;
+=======
+<<<<<<< HEAD
+    text-align: center;
+    width: 100%;
+=======
+	text-align: center;
+	width: 100%;
+>>>>>>> hi
+>>>>>>> HEAD~0
   }
 }
 
 aside {
   div {
+<<<<<<< refs/remotes/originmaster
 	text-align: right;
+=======
+<<<<<<< HEAD
+    text-align: right;
+=======
+	text-align: right;
+>>>>>>> hi
+>>>>>>> HEAD~0
   }
 
   display: none;
@@ -151,6 +178,23 @@ input[type="text"], textarea {
   -webkit-appearance: none;
   float: right;
   &:nth-of-type(odd) {
+<<<<<<< refs/remotes/originmaster
+	float: left;
+=======
+<<<<<<< HEAD
+    float: left;
+>>>>>>> HEAD~0
+  }
+  &:hover {
+	background: rgba(255, 255, 255, 1);
+	transform: scale(1, 1.05);
+  }
+  &:focus {
+<<<<<<< refs/remotes/originmaster
+	background: rgba(255, 255, 255, 0.5);
+=======
+    background: rgba(255, 255, 255, 0.5);
+=======
 	float: left;
   }
   &:hover {
@@ -159,6 +203,8 @@ input[type="text"], textarea {
   }
   &:focus {
 	background: rgba(255, 255, 255, 0.5);
+>>>>>>> hi
+>>>>>>> HEAD~0
   }
 }
 
@@ -188,6 +234,28 @@ a {
   text-decoration: none;
   font-style: normal;
   font-weight: 300;
+<<<<<<< refs/remotes/originmaster
+  &:hover {
+	color: #f6a809;
+	letter-spacing: .1vw;
+=======
+<<<<<<< HEAD
+  &:hover{
+    color: #f6a809;
+    letter-spacing: .1vw;
+>>>>>>> HEAD~0
+  }
+}
+
+footer {
+  display: none;
+}
+
+<<<<<<< refs/remotes/originmaster
+.fb {
+=======
+.fb{
+=======
   &:hover {
 	color: #f6a809;
 	letter-spacing: .1vw;
@@ -199,6 +267,8 @@ footer {
 }
 
 .fb {
+>>>>>>> hi
+>>>>>>> HEAD~0
   height: 6vh;
   position: absolute;
   margin-top: -1.6vh;
@@ -211,12 +281,32 @@ footer {
   opacity: .5;
   transition: opacity .5s;
 
+<<<<<<< refs/remotes/originmaster
   &:hover {
 	opacity: 1;
+=======
+<<<<<<< HEAD
+  &:hover{
+    opacity: 1;
+=======
+  &:hover {
+	opacity: 1;
+>>>>>>> hi
+>>>>>>> HEAD~0
   }
 }
 
 @keyframes mymove {
+<<<<<<< refs/remotes/originmaster
+=======
+<<<<<<< HEAD
+  0% { transform: scale(1.1, 1.1)}
+  15% { transform: scale(1.5, 1.5)}
+  25% {transform: scale(1, 1)}
+  90% {transform: scale(.9, .9)}
+  100% {transform: scale(.8, .8)}
+=======
+>>>>>>> HEAD~0
   0% {
 	transform: scale(1.1, 1.1)
   }
@@ -232,4 +322,8 @@ footer {
   100% {
 	transform: scale(.8, .8)
   }
+<<<<<<< refs/remotes/originmaster
+=======
+>>>>>>> hi
+>>>>>>> HEAD~0
 }

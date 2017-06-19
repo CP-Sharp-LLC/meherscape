@@ -4,6 +4,11 @@ html, body {
   margin: 0;
   width: 100vw; }
 
+<<<<<<< refs/remotes/originmaster
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> HEAD~0
 div.projectcontainer {
   width: 100%;
   position: fixed;
@@ -39,6 +44,10 @@ div.projectcontainer {
         white-space: nowrap;
         display: block; }
 
+<<<<<<< refs/remotes/originmaster
+=======
+>>>>>>> hi
+>>>>>>> HEAD~0
 header {
   width: 100%;
   float: left;
