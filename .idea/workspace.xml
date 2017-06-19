@@ -1,27 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84154228-1f35-403e-bedf-540bb814b7aa" name="Default" comment="FREE SOME SPACE">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/old/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/old/.sass-cache/512161c8c08145b84df6380d29d28ae23325783b/main.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/old/fonts/glyphicons-halflings-regular.eot?" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Alpesh Vijapur/IMG_5138 A.afphoto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Alpesh Vijapur/IMG_5138 B.afphoto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/1 (final year).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/2 (ifa).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/2 detail (ifa).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/3 (tcs).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/3 detail (tcs).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/4 (safal).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/5 (SPACE4).psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PSD file/_DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Gandhinagar workshop/Garima Residence.afphoto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Competition project_2011/Plate 21- competition.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Competition project_2011/Plate 22- competition project.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Garima Residence, Bangalore_2010/Plate9_Garima residence.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Palanpur Hotel Project_2012/Plate10_Palanpur Hotel.psd" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="84154228-1f35-403e-bedf-540bb814b7aa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.live.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitecore.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Apis Divine Honey plant/Apis Divine Honey.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Apis Divine Honey plant/Apis Divine Honey.ppt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO 2014/_DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PORTFOLIO 2014.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/PORTFOLIO 2014.pptx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/FOLIO general/_DS_Store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Keri surat/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/Dwg/BLR 03_base plan_lavesh dixit(1).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/Dwg/BLR 03_base plan_lavesh dixit.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/Dwg/BLR 03_base plan_lavesh dixit_a.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/Dwg/BLR 03_site images _ design considerations.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/Dwg/base plan_lavesh dixit.dwg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Sister House/House with light _ Wind.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Sister House/House with light _ Wind.ppt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/script/d3.v3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/script/d3plus.full.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/script/d3plus.full.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/script/d3plus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/script/d3plus.min.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.old.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/1 (final year).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/1 (final year).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/2 (ifa).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/2 (ifa).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/2 detail (ifa).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/2 detail (ifa).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/3 (tcs).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/3 (tcs).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/3 detail (tcs).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/3 detail (tcs).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/4 (safal).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/4 (safal).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/5 (SPACE4).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/5 (SPACE4).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/6 (RSP).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/6 (RSP).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/7 (furniture).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/7 (furniture).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/8 (cisco).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/8 (cisco).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/9 (fox).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/9 (fox).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/Cover.jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/Cover.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/End.jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/End.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/career graph.jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/career graph.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/FOLIO general/JPEG/first 1 (final year).jpg" afterPath="$PROJECT_DIR$/projects/FOLIO general/first 1 (final year).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(001).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(001).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(002).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(002).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(003).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(003).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(004).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(004).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(005).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(005).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(006).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(006).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(007).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(007).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(008).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(008).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(009).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(009).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(010).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(010).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(011).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(011).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(012).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(012).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(013).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(013).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009(014).jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009(014).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/Jury photos/22112009.jpg" afterPath="$PROJECT_DIR$/projects/Nish_Final Year project_2010/22112009.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/Dwg/plan.png" afterPath="$PROJECT_DIR$/projects/Nish_Lavesh Dixit Residence_Bangalore 2011/plan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/meherscape.com.iml" afterPath="$PROJECT_DIR$/.idea/meherscape.com.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/d3.js" afterPath="$PROJECT_DIR$/script/d3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/d3.min.js" afterPath="$PROJECT_DIR$/script/d3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/index.js" afterPath="$PROJECT_DIR$/script/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,9 +71,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="false" />
+  <component name="ComposerSettings" phpInterpreterId="046162d8-72a3-48c3-bea4-f20b9ffee393" />
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="meherscape.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meherscape.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.live.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.live.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitecore.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sitecore.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,21 +131,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/sitecore.php" />
+        <option value="$PROJECT_DIR$/script/index.js" />
+        <option value="C:/Apps/PHP/php.ini" />
+        <option value="$PROJECT_DIR$/index2.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path />
+    <config-path />
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="731a373c-ba7d-459f-aa8c-152194f9e070" name="localhost" port="9000" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\SC\CP#\meherscape" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost/mscape" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="-3" />
+    <option name="y" value="-3" />
+    <option name="width" value="1341" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -73,10 +184,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meherscape" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP Runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.SyntheticLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="meherscape" />
@@ -121,19 +244,37 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
+              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d3.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="last_opened_file_path" value="C:/Apps/PHP/php_xdebug-2.5.4-7.1-vc14-x86_64.dll" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="nodejs_interpreter_path" value="C:/Apps/nodejs/node" />
+    <property name="javascript.nodejs.core.library.configured.version" value="7.9.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SC\CP#\meherscape" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SC\CP#\meherscape\projects\Nish_Lavesh Dixit Residence_Bangalore 2011" />
+      <recent name="C:\SC\CP#\meherscape\projects\Nish_Final Year project_2010" />
+      <recent name="C:\SC\CP#\meherscape\projects\FOLIO general" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,7 +288,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.Unnamed">
+    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/meherscape/index.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP" session_id="">
+      <method />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -177,6 +324,9 @@
     </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -215,6 +365,18 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="false" name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -227,30 +389,51 @@
       <option name="presentableId" value="Default" />
       <updated>1497888843171</updated>
       <workItem from="1497888854294" duration="1698000" />
-      <workItem from="1497890968604" duration="2103000" />
+      <workItem from="1497890968604" duration="12101000" />
+      <workItem from="1497915240354" duration="134000" />
     </task>
+    <task id="LOCAL-00001" summary="FREE SOME SPACE">
+      <created>1497899828657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497899828657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3801000" />
+    <option name="totallyTimeSpent" value="13933000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-3" y="-3" width="1341" height="698" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34138486" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.4968896" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37522125" sideWeight="0.5120999" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34138486" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37522125" sideWeight="0.48790008" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.49102265" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.49066874" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49102265" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -293,11 +476,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="FREE SOME SPACE" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/index.live.php</url>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sitecore.php</url>
+          <line>72</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sitecore.php</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old/.gitignore">
+    <entry file="file://$PROJECT_DIR$/meherscape.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.live.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -305,11 +510,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sitecore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/old/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -317,6 +552,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meherscape.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_types_d3_index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_types_d3.cloud.layout_index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.live.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Apps/PHP/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1933" column="23" lean-forward="false" selection-start-line="1933" selection-start-column="23" selection-end-line="1933" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitecore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="27" />
           <folding />
         </state>
       </provider>

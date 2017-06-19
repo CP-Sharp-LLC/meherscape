@@ -2,17 +2,23 @@ var treemap;
 var svg;
 
 $(document).ready(function() {
+    var dat = d3.hierarchy(projectdata).sum(
+        function(d){
+          return d.projects.length;
+        });
 
-    treemap = d3.layout.treemap()
-        .size(["100%", "100%"]);
 
     svg = d3.select("#maincontainer")
         .append('svg')
         .attr('width', '100%')
         .attr('height', '100%')
+        .partition(dat);
 
-
-    update(projectdata);
+    svg.selectAll('g')
+        .data(projectdata)
+        .enter().append('g')
+        .text(function(d){ return d.name;});
+    ///update(projectdata);}
 });
 
 
