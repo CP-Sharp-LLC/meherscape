@@ -1,0 +1,169 @@
+#TMGPrototype2{
+	position: absolute;
+	left: 0px;
+	display: block;
+	width: 100%; 
+	height: 369px;
+	top: 280px;
+	overflow: hidden;
+}
+
+#TMGPrototype2 #ThumbnailHolder{
+    position: absolute;
+    width: 500px;
+    height: 123px;
+    display: block;
+    left: 306px;
+    top: 0px;
+    overflow: hidden;
+}
+#TMGPrototype2 #ThumbnailHolder > .ThumbnailList{
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0;
+	
+	cursor: pointer;
+}
+#TMGPrototype2 #ThumbnailHolder > .grabbing{
+	cursor: url(../img/TMgalleryPrototype/grabbing.png), pointer;
+}
+#TMGPrototype2 #ThumbnailHolder > .ThumbnailList > li{
+	display: inline-block;
+	background: url(../img/TMgalleryPrototype/TMthumbLoader.gif) 50% 50% no-repeat #fff;
+	position: relative;
+}
+#TMGPrototype2 #ThumbnailHolder > .ThumbnailList > li ._overItem{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#TMGPrototype2 #ThumbnailHolder > .ThumbnailList > li > img{
+	position: relative;
+}
+#TMGPrototype2 #thumbListcontrols{
+	width: 22px;
+	height: 123px;
+	position: absolute;
+	right: 0;
+}
+#TMGPrototype2 #thumbListcontrols > .leftButton{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 123px;
+	background: #fff;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	z-index: 1;
+	background: url(../img/TMgalleryPrototype/sprite_prev_btn1.png) 50% 50% no-repeat #fff;
+}
+#TMGPrototype2 #thumbListcontrols > .rightButton{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 123px;
+	background: #fff;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	z-index: 1;
+	background: url(../img/TMgalleryPrototype/sprite_prev_btn1.png) 50% 50% no-repeat #fff;
+}
+
+#TMGPrototype2 #categoryList{
+	position: absolute;
+	width: 246px;
+	left: 60px;
+	padding: 0;
+	z-index: 2;
+}
+#TMGPrototype2 #categoryList > li{
+	display: block;
+	position: relative;
+}
+#TMGPrototype2 #categoryList > li > img{
+	display: inline-block;
+	position: relative;
+}
+#TMGPrototype2 #categoryList > li > .setName{
+	position: absolute;
+	width: 123px;
+	height: 123px;
+	background: #fff;
+	left: 123px;
+	top: 0px;
+}
+#TMGPrototype2 #categoryList > li > .setName > span{
+	color: #000;
+	display: block;
+}
+
+#TMGPrototype2 #openSwitherBtn{
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 20px;
+	background: #fff;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#controlHolder{
+	position: absolute;
+	width: 100%;
+	top: 165px;
+}
+#controlHolder > ._prevButton{
+	width: 20px;
+	height: 60px;
+	background: url(../img/TMgalleryPrototype/sprite_prev_btn1.png) 50% 50% no-repeat #fff;
+	float: left;
+	cursor: pointer;
+}
+#controlHolder > ._nextButton{
+	width: 20px;
+	height: 60px;
+	background: url(../img/TMgalleryPrototype/sprite_next_btn1.png) 50% 50% no-repeat #fff;
+	float: right;
+	cursor: pointer;
+}
+#previewHolder{
+	background: #000;
+}
+#previewHolder img{
+	max-width: inherit;
+}
+#previewSpiner{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: url(../img/TMgalleryPrototype/bg1.png);
+	display: none;
+}
+#previewSpiner > span{
+	width: 100%;
+	height: 100%;
+	background: url(../img/TMgalleryPrototype/TMpreviewLoader.gif) 50% 50% no-repeat;
+	display: block;
+	position: absolute;
+}
+
+
+#TMGPrototype2 .userHint{
+	display: block;
+	position: absolute;
+	width: 108px;
+	height: 49px;
+	background: url(../img/TMgalleryPrototype/hint.png) 0 0 no-repeat;
+	left: 50%;
+	margin-left: -52px;
+	z-index: 2;
+	pointer-events: none;
+	top: 36px;
+}

@@ -1,0 +1,977 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
+a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+._marginNull {
+  margin: 0 !important;
+}
+._paddingNull {
+  padding: 0 !important;
+}
+._borderNull {
+  border: none !important;
+}
+._backgroundNull {
+  background: none !important;
+}
+._relative {
+  position: relative;
+}
+._absolute {
+  position: absolute;
+}
+.wrap {
+  overflow: hidden;
+}
+._txtLeft {
+  text-align: left;
+}
+._txtRight {
+  text-align: right;
+}
+._txtCenter {
+  text-align: center;
+}
+._fullWidth {
+  width: 100%;
+}
+/*------ template stylization ------*/
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.428571429;
+  color: #ffffff;
+  background: #000000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  min-height: 650px;
+  top: 0;
+}
+#webSiteLoader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: url(../img/site_loader.gif) 50% 50% no-repeat #1b1b1b;
+}
+/*------------- HEADER ---------------------------------------------------------- */
+header {
+  width: 30em;
+  position: absolute;
+  z-index: 10;
+}
+header .container {
+  position: relative;
+}
+header h1 {
+  width: 100%;
+  height: 160px;
+  margin: 0;
+  z-index: 2;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  background: #ffffff;
+}
+header h1 a {
+  display: block;
+  margin: 56px 0 0 0;
+}
+/*---------------- HEADER end ------------------------------------------------*/
+/*-------------- FOOTER ---------------------------------------------------- */
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+}
+footer .copyright {
+  font: 10px/20px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  float: left;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  margin-right: 45px;
+  letter-spacing: 1px;
+  position: relative;
+}
+/*-----------  FOOTER END  ------------------------------------------------------*/
+/*-----------  MENU  ------------------------------------------------------------*/
+header #mainNav {
+  display: block;
+  margin: 35px 0 0 0;
+  text-align: center;
+  position: relative;
+}
+header #mainNav ul {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+}
+header #mainNav ul li {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+}
+header #mainNav ul li a {
+  display: block;
+  position: relative;
+}
+header #mainNav ul li a:hover {
+  text-decoration: none;
+}
+header #mainNav ul li a:hover .baseText {
+  color: #ffffff;
+}
+header #mainNav ul li .baseText {
+  font: 10px/20px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+header #mainNav ul li ._overPlane {
+  position: absolute;
+  width: 0%;
+  height: 75%;
+  top: 0px;
+  left: 0;
+  z-index: 0;
+  background: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+header #mainNav ul li ._area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: url(../img/pixel.png);
+}
+header #mainNav ul li.active a .baseText {
+  color: #ffffff;
+}
+/*-----------  menu end  --------------------------------------------------------*/
+/*-----------  CONTENT HOLDER  --------------------------------------------------*/
+.desktop-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+#content {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+#content > div {
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+#content > div > ._innerBlock {
+  width: 100%;
+  display: block;
+  margin-top: 240px;
+}
+/*----------- CONTENT BASE Style  ---------------------------------------------- */
+h2 {
+  font: 700 38px/40px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 8px;
+  margin: 0 0 30px 0;
+}
+p {
+  font: 13px/24px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.more_btn1 {
+  display: inline-block;
+  font: 600 20px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #c8e4ee;
+  background: none;
+  text-transform: uppercase;
+  white-space: pre;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0px;
+  background-position: 0;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.more_btn1:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.more_btn1:hover ._link {
+  width: 100%;
+}
+/*------------------------  content end  -----------------------------*/
+/*---------------------- LINKS ---------------------------------- */
+._link1 {
+  font: 10px/20px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+._link1:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+._link2 {
+  font: 13px/24px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+._link2:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/*-------------------------- MARGIN PADDING --------------------- */
+/*-------------------------- TEXTSTYLES ------------------------- */
+/*-------------------------- LISTS ------------------------------ *//*-------------------------- OTHER -------------------------------*/
+.space1 {
+  width: 80px;
+  display: inline-block;
+}
+.figure1 {
+  display: block;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.figure1 img {
+  width: 100%;
+  position: relative;
+}
+.figure2 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  float: left;
+  overflow: hidden;
+}
+.figure2 a {
+  display: inline-block;
+}
+.figure2 a:hover img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.figure2 img {
+  position: relative;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.figure2.mar1 {
+  margin-left: 123px;
+}
+.figure2.mar2 {
+  margin-left: 246px;
+}
+.contentBox1 {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 370px;
+}
+.contentBox1 p {
+  padding: 0 30px;
+  margin: -5px 0 0 0;
+}
+.fullScreen {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  z-index: 10;
+  cursor: pointer;
+}
+.fullScreen .stateTrue {
+  display: none;
+  width: 21px;
+  height: 21px;
+  background: url(../img/fullscreenIcon2.png) 50% 50% no-repeat;
+}
+.fullScreen .stateFalse {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url(../img/fullscreenIcon1.png) 50% 50% no-repeat;
+}
+.closePageBtn {
+  position: absolute;
+  top: -50px;
+  right: 300px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url(../img/closeIcon.png) 0 0 no-repeat;
+}
+.contentCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1b1b1b;
+  z-index: 4;
+}
+.desktop-wrap .animBlock1 .animItem1 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock1 .animItem2 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock1 .animItem3 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock1 .animItem4 {
+  opacity: 0;
+}
+.desktop-wrap .animBlock1._active .animItem1 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0.5s;
+  transition: all 0.6s ease 0.5s;
+}
+.desktop-wrap .animBlock1._active .animItem2 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0.9s;
+  transition: all 0.6s ease 0.9s;
+}
+.desktop-wrap .animBlock1._active .animItem3 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.3s;
+  transition: all 0.6s ease 1.3s;
+}
+.desktop-wrap .animBlock1._active .animItem4 {
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.3s;
+  transition: all 0.6s ease 1.3s;
+}
+.desktop-wrap .animBlock2 .animItem1 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem2 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem3 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem4 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem5 {
+  opacity: 0;
+}
+.desktop-wrap .animBlock2 .animItem6 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem7 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem8 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem9 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2 .animItem10 {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.desktop-wrap .animBlock2._active .animItem1 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 0.4s;
+  transition: all 0.6s ease 0.4s;
+}
+.desktop-wrap .animBlock2._active .animItem2 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 0.6s;
+  transition: all 0.6s ease 0.6s;
+}
+.desktop-wrap .animBlock2._active .animItem3 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 0.8s;
+  transition: all 0.6s ease 0.8s;
+}
+.desktop-wrap .animBlock2._active .animItem4 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 1s;
+  transition: all 0.6s ease 1s;
+}
+.desktop-wrap .animBlock2._active .animItem5 {
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.2s;
+  transition: all 0.6s ease 1.2s;
+}
+.desktop-wrap .animBlock2._active .animItem6 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 1.4s;
+  transition: all 0.6s ease 1.4s;
+}
+.desktop-wrap .animBlock2._active .animItem7 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 1.6s;
+  transition: all 0.6s ease 1.6s;
+}
+.desktop-wrap .animBlock2._active .animItem8 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 1.8s;
+  transition: all 0.6s ease 1.8s;
+}
+.desktop-wrap .animBlock2._active .animItem9 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 2s;
+  transition: all 0.6s ease 2s;
+}
+.desktop-wrap .animBlock2._active .animItem10 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s ease 2s;
+  transition: all 0.6s ease 2s;
+}
+.desktop-wrap .animBlock3 .animItem1 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock3 .animItem2 {
+  position: relative;
+  opacity: 0;
+}
+.desktop-wrap .animBlock3 .animItem3 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock3 .animItem4 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock3 .animItem5 {
+  opacity: 0;
+}
+.desktop-wrap .animBlock3._active .animItem1 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0.5s;
+  transition: all 0.6s ease 0.5s;
+}
+.desktop-wrap .animBlock3._active .animItem2 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0.9s;
+  transition: all 0.6s ease 0.9s;
+}
+.desktop-wrap .animBlock3._active .animItem3 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.3s;
+  transition: all 0.6s ease 1.3s;
+}
+.desktop-wrap .animBlock3._active .animItem4 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.7s;
+  transition: all 0.6s ease 1.7s;
+}
+.desktop-wrap .animBlock3._active .animItem5 {
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.7s;
+  transition: all 0.6s ease 1.7s;
+}
+.desktop-wrap .animBlock4 .animItem1 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock4 .animItem2 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock4 .animItem3 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock4 .animItem4 {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+.desktop-wrap .animBlock4 .animItem5 {
+  opacity: 0;
+}
+.desktop-wrap .animBlock4._active .animItem1 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0.5s;
+  transition: all 0.6s ease 0.5s;
+}
+.desktop-wrap .animBlock4._active .animItem2 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0.9s;
+  transition: all 0.6s ease 0.9s;
+}
+.desktop-wrap .animBlock4._active .animItem3 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.3s;
+  transition: all 0.6s ease 1.3s;
+}
+.desktop-wrap .animBlock4._active .animItem4 {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.7s;
+  transition: all 0.6s ease 1.7s;
+}
+.desktop-wrap .animBlock4._active .animItem5 {
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 1.7s;
+  transition: all 0.6s ease 1.7s;
+}
+/*------------------------------------------------*/
+#TMGPrototype2 #categoryList li {
+  cursor: pointer;
+}
+#TMGPrototype2 #categoryList li .setName {
+  background: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#TMGPrototype2 #categoryList li .setName > span {
+  font: 10px/20px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #272727;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 52px;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#TMGPrototype2 #categoryList li:hover .setName {
+  background: #272727;
+}
+#TMGPrototype2 #categoryList li:hover .setName > span {
+  color: #ffffff;
+}
+#TMGPrototype2 #categoryList li.currSet .setName {
+  background: #272727;
+}
+#TMGPrototype2 #categoryList li.currSet .setName > span {
+  color: #ffffff;
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li {
+  overflow: hidden;
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li ._overItem {
+  background: #000000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li:hover ._overItem {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li.active ._overItem {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#TMGPrototype2 #ThumbnailHolder .ThumbnailList li.active img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#TMGPrototype2 #thumbListcontrols .leftButton {
+  width: 22px;
+  height: 62px;
+  top: 0px;
+  background: url(../img/TMgalleryPrototype/sprite_prev_btn2.png) 50% 50% no-repeat #181818;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#TMGPrototype2 #thumbListcontrols .leftButton:hover {
+  background: url(../img/TMgalleryPrototype/sprite_prev_btn2.png) 50% 50% no-repeat rgba(24, 24, 24, 0.5);
+}
+#TMGPrototype2 #thumbListcontrols .rightButton {
+  width: 22px;
+  height: 61px;
+  top: 62px;
+  background: url(../img/TMgalleryPrototype/sprite_next_btn2.png) 50% 50% no-repeat #181818;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#TMGPrototype2 #thumbListcontrols .rightButton:hover {
+  background: url(../img/TMgalleryPrototype/sprite_next_btn2.png) 50% 50% no-repeat rgba(24, 24, 24, 0.5);
+}
+#TMGPrototype2 #openSwitherBtn {
+  left: 0;
+  width: 13px;
+  height: 369px;
+  background: url(../img/sprite_right_btn.png) 50% 50% no-repeat #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#TMGPrototype2 #openSwitherBtn.show_state {
+  background: url(../img/sprite_left_btn.png) 50% 50% no-repeat #ffffff;
+}
+#TMGPrototype2 #openSwitherBtn:hover {
+  width: 20px;
+}
+#TMGPrototype2 #openSwitherBtn.hint_state {
+  background: url(../img/sprite_right_btn.png) 50% 50% no-repeat rgba(255, 255, 255, 0);
+}
+#controlHolder {
+  height: 0;
+  z-index: 2;
+  display: none;
+}
+#controlHolder ._prevButton {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: -20px;
+  background: url(../img/TMgalleryPrototype/sprite_prev_btn1.png) 50% 50% no-repeat;
+}
+#controlHolder ._nextButton {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  margin-right: 30px;
+  margin-top: -20px;
+  background: url(../img/TMgalleryPrototype/sprite_next_btn1.png) 50% 50% no-repeat;
+}
+#previewHolder {
+  z-index: 0 !important;
+}
+/*-------------------------- Scroll --------------*/
+.scroll1 {
+  width: 360px;
+  height: 240px;
+  position: relative;
+}
+.scroll1 ._inner {
+  display: block;
+}
+.scroll-btns {
+  display: block;
+  top: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+.scroll-btns a {
+  margin-left: 5px;
+  position: relative;
+  float: left;
+  width: 19px;
+  height: 19px;
+}
+.scroll-btns .downBtn {
+  background: url(../img/upIcon.png) 50% 50% no-repeat;
+}
+.scroll-btns .upBtn {
+  background: url(../img/downIcon.png) 50% 50% no-repeat;
+}
+/*-------------------------- GOOGLE MAP ----------------------------*/
+.g_map {
+  width: 355px;
+  height: 320px;
+  margin: 0;
+  background: url(../img/gMapLoader.gif) 50% 50% no-repeat #ffffff;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+}
+.g_map iframe {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+.tablet ._margin1 {
+  margin-left: 0;
+}
+.tablet .animBlock2 .animItem8 {
+  display: none;
+}
+.tablet .animBlock2 .animItem3 {
+  display: none;
+}
+.tablet .animBlock2 .animItem9 {
+  display: none;
+}
+/*-------------------------- mobile WRAP ----------------------------*/
+#mobile-wrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#mobile-wrap .container {
+  max-width: 480px;
+}
+#mobile-wrap #mobile-header {
+  background: #ffffff;
+  height: 130px;
+  text-align: center;
+}
+#mobile-wrap #mobile-header h1 {
+  width: 100%;
+  margin: 19px 0 0 0;
+  text-align: center;
+}
+
+#mobile-wrap #mobile-content {
+  overflow: hidden;
+}
+#mobile-wrap #mobile-content h2 {
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+#mobile-wrap #mobile-content .figure1 {
+  margin: 20px 0 0 0;
+}
+#mobile-wrap #mobile-content .figure2 a {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .g_map {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem1 {
+  width: 50%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem1 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem2 {
+  width: 50%;
+  margin-bottom: 20px;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem2 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem3 {
+  width: 50%;
+  margin: 0 0 20px 0;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem3 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem4 {
+  width: 50%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem4 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem6 {
+  width: 50%;
+  margin: 0;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem6 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem7 {
+  width: 50%;
+  margin: 0 0 20px 0;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem7 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem8 {
+  width: 50%;
+  float: right;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem8 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem9 {
+  width: 50%;
+  float: right;
+}
+#mobile-wrap #mobile-content .animBlock2 .animItem9 img {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .contentBox1 {
+  width: 100%;
+}
+#mobile-wrap #mobile-content .animBlock2 .contentBox1 p {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+#mobile-wrap #mobile-content .animBlock3 .animItem4 {
+  margin-bottom: 20px;
+}
+#mobile-wrap #mobile-content .folioList {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+#mobile-wrap #mobile-content .folioList li {
+  display: block;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#mobile-wrap #mobile-content .folioList li ._thumb {
+  width: 123px;
+  height: 123px;
+  float: left;
+}
+#mobile-wrap #mobile-content .folioList li ._name {
+  font: 16px/123px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  text-indent: 15px;
+}
+#mobile-wrap #mobile-content .folioList li ul {
+  display: none;
+}
+#mobile-wrap #mobile-content .scroll1 {
+  width: 100%;
+  height: auto;
+}
+#mobile-wrap #mobile-content .scroll-btns {
+  display: none;
+}
+#mobile-wrap #mobile-footer {
+  background: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+#mobile-wrap #mobile-footer .container .copyright {
+  font: 10px/20px 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+#mobile-wrap #mobile-footer .container .copyright ._link1 {
+  color: #000000;
+}
+#mobile-wrap #mobile-footer .container .copyright ._link1:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+/*Core variables and mixins*/

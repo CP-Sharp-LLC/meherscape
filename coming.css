@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw; }
+
+div.projectcontainer {
+  width: 100%;
+  position: fixed;
+  top: 60vh;
+  left: 0;
+  padding: 0 0 2vh; }
+  div.projectcontainer div.projectset {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden; }
+    div.projectcontainer div.projectset div.project {
+      height: 100%;
+      width: 5vw;
+      height: 100%;
+      display: block;
+      float: left; }
+      div.projectcontainer div.projectset div.project .imagerow {
+        height: 100%; }
+        div.projectcontainer div.projectset div.project .imagerow img {
+          height: 100%;
+          width: 5vw; }
+      div.projectcontainer div.projectset div.project:hover h1 {
+        height: 100%;
+        line-height: 100%; }
+        div.projectcontainer div.projectset div.project:hover h1:hover {
+          overflow: visible;
+          cursor: pointer;
+          text-decoration: underline; }
+      div.projectcontainer div.projectset div.project h1 {
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block; }
+
+header {
+  width: 100%;
+  float: left;
+  margin: 0; }
+  header div {
+    text-align: center;
+    width: 100%; }
+
+aside {
+  display: none;
+  width: 35%;
+  float: left;
+  text-align: left;
+  margin: 0;
+  padding-left: 4%; }
+  aside div {
+    text-align: right; }
+
+.top-bar {
+  padding-top: 2vh;
+  width: 100%;
+  text-align: center;
+  height: 15vh; }
+
+body {
+  background: #333;
+  color: #DDD;
+  text-align: center;
+  font-family: "Roboto", tahoma, sans;
+  font-weight: lighter; }
+
+video {
+  max-width: 100vw;
+  max-height: 80vh; }
+
+h2 {
+  margin: 0;
+  color: #eee;
+  font-weight: lighter;
+  width: 40%;
+  font-size: 2.5vh;
+  letter-spacing: .2vw;
+  float: left;
+  display: inline-block; }
+
+h1 {
+  font-size: 3.7vh;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #f6a809;
+  width: 100%;
+  display: block;
+  letter-spacing: .2vw;
+  padding-bottom: 2%; }
+
+article {
+  width: 45%;
+  float: left; }
+
+address {
+  font-size: 2vh; }
+
+input[type="text"], textarea {
+  display: inline-block;
+  background: #cacecc;
+  transition: all 1s;
+  height: 12%;
+  outline: 0;
+  border: none;
+  width: 48%;
+  margin: 0 0 1%;
+  text-align: left;
+  color: #fff;
+  -webkit-appearance: none;
+  float: right; }
+  input[type="text"]:nth-of-type(odd), textarea:nth-of-type(odd) {
+    float: left; }
+  input[type="text"]:hover, textarea:hover {
+    background: white;
+    transform: scale(1, 1.05); }
+  input[type="text"]:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.5); }
+
+p {
+  margin: 0; }
+
+textarea {
+  display: block; }
+
+input[name="subject"] {
+  width: 100%; }
+
+button {
+  background: #222;
+  border: #fff solid 1px;
+  padding: 5px;
+  color: #eee;
+  float: right; }
+
+a {
+  transition: all .5s;
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300; }
+  a:hover {
+    color: #f6a809;
+    letter-spacing: .1vw; }
+
+footer {
+  display: none; }
+
+.fb {
+  height: 6vh;
+  position: absolute;
+  margin-top: -1.6vh;
+  margin-left: 1vw;
+  animation-name: mymove;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: .5;
+  transition: opacity .5s; }
+  .fb:hover {
+    opacity: 1; }
+
+@keyframes mymove {
+  0% {
+    transform: scale(1.1, 1.1); }
+  15% {
+    transform: scale(1.5, 1.5); }
+  25% {
+    transform: scale(1, 1); }
+  90% {
+    transform: scale(0.9, 0.9); }
+  100% {
+    transform: scale(0.8, 0.8); } }
+
+/*# sourceMappingURL=coming.css.map */
