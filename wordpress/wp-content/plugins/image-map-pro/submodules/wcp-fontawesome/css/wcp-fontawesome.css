@@ -1,0 +1,120 @@
+/* fontawesome browser */
+#icons-ui-wrap {
+    width: 1200px;
+}
+#icon-search-wrap {
+    position: relative;
+}
+#icon-search-wrap i.fa-search {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: #dddddd;
+    font-size: 25px;
+}
+#input-icon-search {
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 35px;
+    border: 1px solid #dddddd;
+    outline: none;
+    padding: 0 44px;
+    font-size: 18px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#input-icon-search:focus {
+    border: 1px solid #8a8a8a;
+}
+.fontawesome-icon-wrap {
+    display: inline-flex;
+    line-height: 32px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fontawesome-icon-wrap:hover {
+    background: #eeeeee;
+}
+.fontawesome-icon-wrap i {
+    margin-right: 10px;
+    line-height: 32px;
+    width: 32px;
+    text-align: center;
+}
+.fontawesome-icon-wrap span {
+    line-height: 32px;
+}
+#icon-container {
+    overflow-y: auto;
+}
+.search-attachment {
+    color: rgb(179, 179, 179);
+    margin-left: 2px;
+}
+.category-title-wrap h1 {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+}
+.category-title-wrap .fa {
+    width: 16px;
+    text-align: center;
+}
+.category-title-wrap.active .fa-caret-down {
+    display: inline-block;
+}
+.category-title-wrap.active .fa-caret-right {
+    display: none;
+}
+.category-title-wrap .fa-caret-down {
+    display: none;
+}
+.category-title-wrap .fa-caret-right {
+    display: inline-block;
+}
+.icon-name-underlined {
+    text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+    #icons-ui-wrap {
+        width: 900px;
+    }
+    .fontawesome-icon-wrap {
+        width: 25%;
+    }
+}
+@media (max-width: 1199px) {
+    #icons-ui-wrap {
+        width: 712px;
+    }
+    .fontawesome-icon-wrap {
+        width: 33%;
+    }
+}
+@media (max-width: 991px) {
+    #icons-ui-wrap {
+        width: 534px;
+    }
+    .fontawesome-icon-wrap {
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    #icons-ui-wrap {
+        width: 240px;
+    }
+    .fontawesome-icon-wrap {
+        width: 100%;
+    }
+}

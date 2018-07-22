@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.edgtf-btn {
+    @include edgtfButtonDefaultStyle();
+    @include edgtfButtonMediumParams();
+    cursor: pointer;
+    
+    &.edgtf-btn-simple {
+        padding: 0 !important;
+        color: $default-text-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        .edgtf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $default-heading-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+
+        &.edgtf-btn-with-arrow {
+            .edgtf-btn-arrow{
+                svg{
+                    vertical-align: middle;
+                }
+
+                polyline{
+                    stroke: currentColor;
+                }
+            }
+
+            &:not(.edgtf-btn-text-on-hover) {
+                .edgtf-btn-arrow{
+                    display: inline-block;
+                    @include edgtfTransform(translate3d(0, 0, 0));
+                    @include edgtfTransitionTransform(.3s cubic-bezier(0.86, 0, 0.07, 1));
+                }
+
+                &:hover {
+                    .edgtf-btn-arrow {
+                        @include edgtfTransform(translate3d(5px, 0, 0));
+                    }
+                }
+            }
+        }
+
+        &.edgtf-btn-text-on-hover {
+            overflow: hidden;
+            vertical-align: middle;
+            @include edgtfTransition(.3s .15s);
+
+            .edgtf-btn-text {
+                white-space: nowrap;
+                opacity: 0;
+                @include edgtfTransform(translate3d(-100%,0,0));
+                @include edgtfTransition(.4s cubic-bezier(0.86, 0, 0.07, 1));
+            }
+
+            .edgtf-btn-arrow {
+                right: 0;
+                top: 0;
+            }
+
+            &:hover {
+                @include edgtfTransition(.3s);
+
+                .edgtf-btn-text {
+                    opacity: 1;
+                    @include edgtfTransform(translate3d(0,0,0));
+                    @include edgtfTransitionTransform(.4s cubic-bezier(0.09, 0.49, 0.13, 0.89) .1s);
+                }
+            }
+        }
+    }
+
+    &.edgtf-btn-solid {
+        @include edgtfButtonSolidColor();
+
+        .edgtf-btn-bg {
+            @include edgtfAbsoluteHolderLayout();
+            background-repeat: repeat;
+        }
+
+        .edgtf-btn-text{
+            position: relative;
+            z-index:50;
+        }
+
+        &.edgtf-btn-with-crosshair {
+            .edgtf-btn-lines{
+                position: absolute;
+                background-color: #fff;
+                z-index: 20;
+
+                &.edgtf-line-1,
+                &.edgtf-line-3{
+                    height: 1px;
+                    width: 13px;
+                }
+
+                &.edgtf-line-2,
+                &.edgtf-line-4{
+                    height: 13px;
+                    width: 1px;
+                }
+
+                &.edgtf-line-1{
+                    top: 0;
+                    left: -6px;
+                }
+
+                &.edgtf-line-2{
+                    left: 0;
+                    top: -6px;
+                }
+
+                &.edgtf-line-3{
+                    bottom: 0;
+                    right: -6px;
+                }
+
+                &.edgtf-line-4{
+                    right: 0;
+                    bottom: -6px;
+                }
+            }
+
+            &:not(.edgtf-btn-with-background-image) {
+                @include keyframes(edgtfFadeSpeed) {
+                    0%, 100% {
+                        opacity: 1;
+                    }
+
+                    30% {
+                        opacity: 0.3;
+                    }
+
+                    60% {
+                        opacity: 0.8;
+                    }
+                }
+                &:hover {
+                    .edgtf-line-1 {
+                        left: calc(100% - 7px);
+                        top: calc(100% - 1px);
+                        @include edgtfTransition(left .45s cubic-bezier(0.86, 0, 0.07, 1), top .2s cubic-bezier(0.25, 0.46, 0.45, 0.94) .45s);
+                    }
+
+                    .edgtf-line-2 {
+                        left: calc(100% - 1px);
+                        top: calc(100% - 7px);
+                        @include edgtfTransition(left .45s cubic-bezier(0.86, 0, 0.07, 1), top .2s cubic-bezier(0.25, 0.46, 0.45, 0.94) .45s);
+                    }
+
+                    .edgtf-line-3 {
+                        right: calc(100% - 7px);
+                        bottom: calc(100% - 1px);
+                        @include edgtfTransition(right .45s cubic-bezier(0.86, 0, 0.07, 1), bottom .2s cubic-bezier(0.25, 0.46, 0.45, 0.94) .45s);
+                    }
+
+                    .edgtf-line-4 {
+                        right: calc(100% - 1px);
+                        bottom: calc(100% - 7px);
+                        @include edgtfTransition(right .45s cubic-bezier(0.86, 0, 0.07, 1), bottom .2s cubic-bezier(0.25, 0.46, 0.45, 0.94) .45s);
+                    }
+
+                    .edgtf-btn-lines {
+                        @include edgtfAnimation(edgtfFadeSpeed 1s 1);
+                    }
+                }
+            }
+        }
+
+        &.edgtf-btn-with-background-image {
+            .edgtf-btn-bg {
+                @include edgtfTransition(opacity .4s);
+            }
+
+            &:hover {
+                .edgtf-btn-bg {
+                    opacity: .3;
+                }
+            }
+        }
+
+        &:not(.edgtf-btn-with-crosshair) {
+            &:not(.edgtf-btn-custom-hover-color):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                color: #fff !important;
+            }
+
+            &:not(.edgtf-btn-custom-hover-bg):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                background-color: $default-heading-color !important;
+            }
+
+            &:not(.edgtf-btn-custom-border-hover):hover {
+                //important because of inline color attribute. :not is used so we don't have to use important in JS
+                border-color: $default-heading-color !important;
+            }
+        }
+    }
+
+    &.edgtf-btn-small {
+        @include edgtfButtonSmallParams();
+    }
+
+    &.edgtf-btn-medium {
+        //same as default
+    }
+
+    &.edgtf-btn-large {
+        @include edgtfButtonLargeParams();
+    }
+
+    &.edgtf-btn-huge {
+        @include edgtfButtonHugeParams();
+    }
+
+    &.edgtf-btn-icon {
+
+        > i,
+        > span:not(.edgtf-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 0 4px;
+            font-size: 1.142857142857143em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

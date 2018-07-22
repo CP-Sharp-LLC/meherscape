@@ -1,0 +1,96 @@
+.edgtf-link-section-holder {
+    margin: 0 -8px;
+
+    .edgtf-link-section-title {
+        margin-bottom: 30px;
+    }
+
+    .edgtf-single-link-section-holder {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 10px;
+
+        &:last-child{
+            a{
+                .edgtf-single-link-title-holder {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            position: relative;
+            font-family: $default-heading-font;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: $first-main-color;
+
+            .edgtf-single-link-title-holder{
+                margin: 0 90px 0 24px;
+                @include edgtfTransitionTransform(.15s cubic-bezier(0.6, 0.3, 0.11, 0.86));
+
+                .edgtf-single-link-title {
+                    margin: 0;
+                }
+            }
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background-color: $default-border-color;
+                @include edgtfTransform(rotate(0));
+                @include edgtfTransitionTransform(.15s cubic-bezier(0, 0, 0.08, 0.96));
+            }
+
+            &:hover {
+                .edgtf-single-link-title-holder {
+                    @include edgtfTransform(translate3d(10px, 0, 0));
+                }
+
+                &:before{
+                    @include edgtfTransform(rotate(40deg));
+                }
+            }
+        }
+    }
+
+    &.edgtf-appear-fx {
+        .edgtf-link-section-title-holder,
+        .edgtf-single-link-title-holder {
+            overflow: hidden;
+        }
+
+        .edgtf-link-section-title, 
+        .edgtf-single-link-title {
+            @include edgtfTransform(translate3d(-100%, 0, 0));
+        }
+
+        .no-touch & {
+            .edgtf-link-section-title {
+                @include edgtfTransitionTransform(.35s cubic-bezier(0.6, 0.3, 0.11, 0.86));
+            }
+
+            @for $i from 1 through 10 {
+                .edgtf-single-link-section-holder:nth-child(#{$i}) {
+                    .edgtf-single-link-title {
+                        @include edgtfTransitionTransform(.35s cubic-bezier(0.6, 0.3, 0.11, 0.86) $i * .1s);
+                    }
+                }
+            }
+        }
+
+        .touch &,
+        &.edgtf-appear {
+            .edgtf-link-section-title,
+            .edgtf-single-link-title {
+                @include edgtfTransform(translate3d(0, 0, 0));
+            }
+        }
+    }
+}

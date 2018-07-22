@@ -1,0 +1,55 @@
+/* ==========================================================================
+# Team list - begin
+	========================================================================== */
+
+.edgtf-team-list-holder {
+    @include edgtfRelativeHolderLayout();
+
+    .edgtf-team {
+        @include edgtfRelativeHolderLayout();
+
+        float: left;
+        box-sizing: border-box;
+    }
+
+    /***** Team Columns - begin *****/
+
+    $team_columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($team_columns_number) {
+        &.edgtf-tl-#{nth($team_columns_number,$i+1)}-columns {
+
+            .edgtf-team {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) { // set different break point for four and five columns
+                @media only screen and (min-width:  $laptop-landscape-plus-pixel) {
+
+                    .edgtf-team {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width:  $ipad-landscape-plus-pixel) {
+
+                    .edgtf-team {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Team Columns - end *****/
+}
+
+/* ==========================================================================
+# Team list - end
+========================================================================== */

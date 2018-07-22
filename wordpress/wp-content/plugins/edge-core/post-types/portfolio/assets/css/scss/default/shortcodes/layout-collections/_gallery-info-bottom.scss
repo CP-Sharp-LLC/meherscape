@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Info Bottom style - begin
+   ========================================================================== */
+
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-gallery-info-bottom {
+		
+		&.edgtf-pl-has-shadow {
+			
+			.edgtf-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.edgtf-pli-text-holder {
+
+					.edgtf-pli-title-cat-holder{
+						@include edgtfTransform(translateY(0));
+					}
+
+					.edgtf-pli-title,
+					.edgtf-pli-category-holder{
+						opacity: 1;
+						@include edgtfTransition(opacity .2s ease-out .4s);
+					}
+				}
+			}
+			
+			.edgtf-pl-item-inner {
+				overflow: hidden;
+			}
+
+			.edgtf-pli-text-holder{
+
+				.edgtf-pli-text{
+					vertical-align: bottom;
+					text-align: center;
+				}
+
+				.edgtf-pli-appear-item{
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					overflow: hidden;
+				}
+
+				.edgtf-pli-title,
+				.edgtf-pli-category-holder{
+					opacity: 0;
+					@include edgtfTransition(opacity .2s ease-out);
+				}
+			}
+		}
+		
+		.edgtf-pli-text-holder {
+			@include edgtfAbsoluteHolderLayout();
+		}
+
+		.edgtf-pli-title-cat-holder{
+			display: inline-block;
+			vertical-align: middle;
+			padding: 17px 25px;
+			text-align: center;
+			box-sizing: border-box;
+			@include edgtfTransform(translateY(130%));
+			@include edgtfTransitionTransform(.25s ease-in-out);
+		}
+
+
+		&.edgtf-pl-skin-dark{
+			.edgtf-pli-title-cat-holder {
+				background-color: rgba(32, 32, 32, 1);
+			}
+
+			.edgtf-pli-text {
+				
+				.edgtf-pli-title{
+					color: #fff;
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #cecece;
+						
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		&.edgtf-pl-skin-light{
+			.edgtf-pli-title-cat-holder {
+				background-color: rgba(255, 255, 255, 1);
+			}
+
+			.edgtf-pli-text {
+				
+				.edgtf-pli-title{
+					color: $default-heading-color;
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #696969;
+						
+						&:hover {
+							color: $default-heading-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Info Bottom style - end
+   ========================================================================== */

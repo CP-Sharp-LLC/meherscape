@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.edgtf-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	
+	.edgtf-video-button-image {
+		@include edgtfRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.edgtf-video-button-play,
+	.edgtf-video-button-play-image {
+		@include edgtfAbsoluteHolderLayout();
+		z-index: 1;
+		
+		.edgtf-video-button-play-inner {
+			position: relative;
+			top: 50%;
+			left: 0;
+			display: block;
+			text-align: center;
+			@include edgtfTransform(translateY(-50%));
+		}
+	}
+	
+	.edgtf-video-button-play {
+		color: $default-heading-color;
+		font-size: 106px;
+		line-height: 1;
+		
+		span {
+			display: block;
+			line-height: inherit;
+			
+			&:before {
+				display: block;
+				line-height: inherit;
+			}
+		}
+	}
+	
+	.edgtf-video-button-play-image {
+		
+		&.edgtf-vb-has-hover-image {
+			
+			&:hover {
+				
+				img {
+					
+					&:first-child {
+						opacity: 0;
+					}
+					
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			@include edgtfTransition(opacity .3s ease-in-out);
+			
+			&:first-child {
+				position: relative;
+				opacity: 1;
+			}
+			
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				opacity: 0;
+				@include edgtfTransform(translateX(-50%) translateZ(0));
+				
+				.rev_slider_wrapper & {
+					@include edgtfTransform(translateZ(0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

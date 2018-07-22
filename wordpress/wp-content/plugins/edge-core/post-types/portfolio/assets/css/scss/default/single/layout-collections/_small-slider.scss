@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-single-holder {
+	
+	&.edgtf-ps-small-slider-layout {
+		
+		.edgtf-ps-image-holder {
+
+			margin-bottom: 28px;
+			
+			.edgtf-ps-image-inner {
+				visibility: hidden;
+			}
+			
+			.edgtf-ps-image {
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+		
+		.edgtf-ps-content-item {
+			padding-bottom: 62px;
+			border-bottom: 1px solid #e0e4f2;
+			margin: 0 0 62px;
+		}
+
+        .edgtf-owl-slider .owl-nav .owl-prev {
+            left: -10px;
+        }
+        .edgtf-owl-slider .owl-nav .owl-next {
+            right: -10px;
+        }
+	}
+}
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */

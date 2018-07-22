@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-single-holder {
+    
+    &.edgtf-ps-small-images-layout {
+    
+        .edgtf-ps-image-holder {
+        
+            .edgtf-ps-image {
+                margin: 0 0 30px;
+            
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    
+        .edgtf-ps-content-item {
+            padding-bottom: 62px;
+            border-bottom: 1px solid #e0e4f2;
+            margin: 0 0 62px;
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - end
+   ========================================================================== */

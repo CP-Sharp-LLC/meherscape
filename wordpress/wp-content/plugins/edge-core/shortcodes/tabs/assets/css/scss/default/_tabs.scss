@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.edgtf-tabs {
+	@include edgtfRelativeHolderLayout();
+	
+	.edgtf-tabs-nav {
+		@include edgtfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				@include edgtfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+				font-family: $default-heading-font;
+			}
+		}
+	}
+	
+	.edgtf-tab-container {
+		@include edgtfRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.edgtf-tabs-standard {
+		
+		.edgtf-tabs-nav {
+			
+			li {
+				
+				a {
+					line-height: 25px;
+					font-weight: 400;
+					color: $default-heading-color;
+					padding: 14px 15px;
+					font-size: 17px;
+					text-transform: uppercase;
+					background-color: #fff;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					background-image: url(../../../../themes/aalto/assets/img/default_pattern.png);
+					background-repeat: repeat;
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.edgtf-tabs-boxed {
+		
+		.edgtf-tabs-nav {
+			
+			li {
+				margin: 0 12px 0 0;
+				
+				a {
+					line-height: 25px;
+					font-weight: 400;
+					color: $default-heading-color;
+					background-color: #fff;
+					padding: 14px 15px;
+					font-size: 17px;
+					text-transform: uppercase;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					background-image: url(../../../../themes/aalto/assets/img/default_pattern.png);
+					background-repeat: repeat;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.edgtf-tabs-simple {
+		
+		.edgtf-tabs-nav {
+			border-bottom: 1px solid $default-border-color;
+			
+			li {
+				margin: 0 31px 0 0;
+				
+				a {
+					padding: 13px 0;
+					font-size: 18px;
+					line-height: 26px;
+					font-weight: 400;
+					color: #999;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			padding: 31px 0;
+			border-bottom: 1px solid $default-border-color;
+		}
+	}
+	
+	&.edgtf-tabs-vertical {
+		display: table;
+		
+		.edgtf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			border-right: 1px solid $default-border-color;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 24px;
+				
+				a {
+					font-size: 18px;
+					line-height: 26px;
+					font-weight: 400;
+					color: #999;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.ui-widget-content {
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    border-radius: 0;
+
+    .ui-widget-header {
+        border: 0;
+        background: none;
+        color: initial;
+        font-weight: inherit;
+        line-height: inherit;
+        font-size: inherit;
+        border-radius: 0;
+		border-bottom: 1px solid $default-border-color;
+    }
+    .ui-tabs-nav {
+        li {
+            background: initial;
+            border: 0;
+            font-weight: inherit;
+            color: inherit;
+            border-radius: 0;
+            position: initial;
+        }
+    }
+
+    .ui-widget-content {
+        border: 0;
+        background: none;
+        color: inherit;
+        border-radius: 0;
+    }
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

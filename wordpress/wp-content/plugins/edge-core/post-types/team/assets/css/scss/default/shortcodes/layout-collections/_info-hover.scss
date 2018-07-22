@@ -1,0 +1,211 @@
+/* ==========================================================================
+# Team info hover - begin
+	========================================================================== */
+
+.edgtf-team {
+    &.info-hover {
+
+        .edgtf-team-inner {
+            position: relative;
+            @include edgtfTableLayout;
+
+            &.dark-skin{
+                .edgtf-team-info-tc{
+                    background-color: #111111;
+                    border-color: #414141;
+                }
+
+                .edgtf-team-name{
+                    a{
+                        color: $default-background-color;
+
+                        &:hover{
+                            color: #7d7d7d;
+                        }
+                    }
+                }
+
+                .edgtf-team-position{
+                    color: #7d7d7d;
+                }
+
+                .edgtf-icon-shortcode {
+                    .edgtf-icon-element{
+                        color: #7d7d7d;
+
+                        &:hover{
+                            color: $default-background-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .edgtf-team-image {
+            display: table-cell;
+            width: 50%;
+
+            img {
+                display: block;
+            }
+        }
+
+        .edgtf-team-name,
+        .edgtf-team-position,
+        .edgtf-team-text,
+        .edgtf-icon-shortcode,
+        .edgtf-icon-shortcode > * {
+            color: #000;
+        }
+
+        .edgtf-team-bg {
+            position: absolute;
+            width: 50%;
+            height: 76.5%;
+            top: 13.5%;
+            left: 23%;
+            background-image: url('img/default_pattern.png');
+            background-repeat: repeat;
+            z-index: -1;
+        }
+
+        .edgtf-team-info-tb {
+            text-align: left;
+            @include edgtfTransition(opacity 0.2s ease-out);
+            display: table-cell;
+            width: 50%;
+            vertical-align: bottom;
+            padding: 0 0 34px 34px;
+            box-sizing: border-box;
+        }
+
+        .edgtf-team-info-tc {
+            width: 100%;
+            padding: 25px 31px;
+            box-sizing: border-box;
+            border: 1px solid $default-border-color;
+            border-right: 0;
+            background-color: $default-background-color;
+        }
+
+        .edgtf-team-name{
+        	margin: 0;
+
+        	&:not(:only-child){
+	            margin: 0 0 3px;
+	        }
+        }
+
+        .edgtf-team-position {
+            margin: 0;
+            font-style: italic;
+        }
+
+        .edgtf-team-social-holder-between {
+            margin: 15px 0 2px;
+        }
+
+        .edgtf-icon-shortcode {
+            margin: 0 8px;
+            font-size: 12px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .edgtf-icon-element{
+                color: $default-text-color;
+                cursor: pointer;
+
+                &:hover{
+                    color: $first-main-color;
+                }
+            }
+        }
+
+        .edgtf-team-overlay-link {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        @at-root .edgtf-show-info-on-appear & {
+            .edgtf-team-info-tb {
+                overflow: hidden;
+
+                .edgtf-team-info-tc {
+                    @include edgtfTransform(translate3d(100%, 0, 0));
+                }
+            }
+            .edgtf-team-bg {
+                @include edgtfTransformOrigin(100% 50%);
+                @include edgtfTransform(scaleX(0));
+            }
+
+            .edgtf-team-image img {
+                -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+            }
+
+            .no-touch & {
+                .edgtf-team-info-tc {
+                    @include edgtfTransitionTransform(.5s cubic-bezier(0.6, 0.3, 0.11, 0.86) .2s);
+                }
+
+                .edgtf-team-bg {
+                    @include edgtfTransitionTransform(.4s cubic-bezier(0.71, 0.19, 0, 0.76) .5s);
+                }
+
+                .edgtf-team-image img {
+                    @include edgtfTransition(.5s cubic-bezier(0.6, 0.3, 0.11, 0.86));
+                }
+            }
+
+            .touch &,
+            &.edgtf-appear {
+                .edgtf-team-info-tc {
+                    @include edgtfTransform(translate3d(0, 0, 0));
+                }
+
+                .edgtf-team-bg {
+                    @include edgtfTransform(scaleX(1));
+                }
+
+                .edgtf-team-image img {
+                    -webkit-clip-path: inset(0 0 0 0);
+                    clip-path: inset(0 0 0 0);
+                }
+            }
+
+            //ie fallback
+            .no-touch .edgtf-ms-explorer & {
+                .edgtf-team-image img {
+                    opacity: 0;
+                }
+            }
+
+            .touch .edgtf-ms-explorer &,
+            .edgtf-ms-explorer &.edgtf-appear {
+                .edgtf-team-image img {
+                    opacity: 1;
+                }
+            }
+        }
+
+        @at-root .no-touch .edgtf-tl-has-parallax-scroll & {
+            .edgtf-team-info-tb {
+                vertical-align: middle;
+                width: 51%;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Team info bellow - end
+	========================================================================== */

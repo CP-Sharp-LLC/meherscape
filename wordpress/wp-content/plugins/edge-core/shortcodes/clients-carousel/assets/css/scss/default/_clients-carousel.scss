@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.edgtf-clients-carousel-holder {
+    @include edgtfRelativeHolderLayout();
+    
+	.edgtf-cc-inner {
+		@include edgtfRelativeHolderLayout();
+	}
+	
+	.edgtf-cc-item {
+		@include edgtfRelativeHolderLayout();
+		cursor: -webkit-grab;
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		.edgtf-cc-item {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	/***** Hover Types - begin *****/
+	
+	&.edgtf-cc-hover-switch-images {
+		
+		.edgtf-cc-item {
+			
+			&:hover {
+				
+				.edgtf-cc-image {
+					opacity: 0;
+				}
+				
+				.edgtf-cc-hover-image {
+					opacity: 1;
+				}
+			}
+			
+			.edgtf-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				opacity: 1;
+				@include edgtfTransition(opacity .15s ease-out);
+			}
+			
+			.edgtf-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: auto;
+				opacity: 0;
+				@include edgtfTransform(translateX(-50%));
+				@include edgtfTransition(opacity .15s ease-out);
+			}
+		}
+	}
+	
+	&.edgtf-cc-hover-roll-over {
+		
+		.edgtf-cc-item {
+			overflow: hidden;
+			
+			&:hover {
+				
+				.edgtf-cc-image {
+					@include edgtfTransform(translateY(100%));
+				}
+				
+				.edgtf-cc-hover-image {
+					@include edgtfTransform(translate(-50%, 0));
+				}
+			}
+			
+			.edgtf-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				@include edgtfTransitionTransform(.4s ease);
+			}
+			
+			.edgtf-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: auto;
+				@include edgtfTransform(translate(-50%, -100%));
+				@include edgtfTransitionTransform(.4s ease);
+			}
+		}
+	}
+	
+	/***** Hover Types - end *****/
+}
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

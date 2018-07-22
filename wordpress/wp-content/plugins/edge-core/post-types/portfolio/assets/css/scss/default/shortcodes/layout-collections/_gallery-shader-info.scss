@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Shader Info style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-gallery-shader-info {
+		
+		&.edgtf-pl-has-shadow {
+			
+			.edgtf-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.edgtf-pli-text-holder {
+					opacity: 1;
+
+					.edgtf-pli-title,
+					.edgtf-pli-category-holder{
+						@include edgtfTransform(translateX(0));
+						@include edgtfTransitionTransform(.25s ease-in-out .2s);
+					}
+				}
+			}
+			
+			.edgtf-pl-item-inner {
+				overflow: hidden;
+			}
+
+			.edgtf-pli-text-holder{
+				text-align: left;
+
+				.edgtf-pli-text{
+					vertical-align: bottom;
+				}
+
+				.edgtf-pli-appear-item{
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					overflow: hidden;
+				}
+
+				.edgtf-pli-title,
+				.edgtf-pli-category-holder{
+					@include edgtfTransform(translateX(-130%));
+					@include edgtfTransitionTransform(.25s ease-in-out);
+				}
+			}
+		}
+		
+		.edgtf-pli-text-holder {
+			@include edgtfAbsoluteHolderLayout();
+			padding: 20px 23px;
+			opacity: 0;
+			text-align: center;
+			box-sizing: border-box;
+			@include edgtfTransition(opacity .2s ease-in-out);
+		}
+
+
+		&.edgtf-pl-skin-dark{
+			.edgtf-pli-text-holder {
+				background-color: rgba(32, 32, 32, 0.9);
+			}
+
+			.edgtf-pli-text {
+				
+				.edgtf-pli-title{
+					color: #fff;
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #cecece;
+						
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		&.edgtf-pl-skin-light{
+			.edgtf-pli-text-holder {
+				background-color: rgba(255, 255, 255, 0.9);
+			}
+
+			.edgtf-pli-text {
+				
+				.edgtf-pli-title{
+					color: $default-heading-color;
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #696969;
+						
+						&:hover {
+							color: $default-heading-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Shader Info style - end
+   ========================================================================== */

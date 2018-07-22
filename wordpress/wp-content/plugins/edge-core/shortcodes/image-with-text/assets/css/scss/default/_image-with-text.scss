@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.edgtf-image-with-text-holder {
+    @include edgtfRelativeHolderLayout();
+	
+	&.edgtf-has-shadow {
+		
+		.edgtf-iwt-image {
+			@include edgtfTransition(all .3s);
+			box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2); 
+		}
+	}
+	
+	.edgtf-iwt-image {
+		@include edgtfRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.edgtf-iwt-text-holder {
+		@include edgtfRelativeHolderLayout();
+	}
+	
+	.edgtf-iwt-title {
+		margin: 32px 0 0;
+	}
+	
+	.edgtf-iwt-text {
+		margin: 14px 0 0;
+	}
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.edgtf-image-behavior-custom-link {
+
+		&:not(.edgtf-has-shadow) {
+			.edgtf-iwt-image {
+				a {
+					@include edgtfImageOverlayHoverStyle();
+				}
+			}
+		}
+		
+		&.edgtf-has-shadow {
+			&:hover {
+				.edgtf-iwt-image {
+					box-shadow: 0px 8px 22px 0px rgba(0, 0, 0, 0.22); 
+				}
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.edgtf-image-behavior-lightbox {
+		
+		.edgtf-iwt-image {
+			
+			a {
+				@include edgtfImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.edgtf-image-behavior-zoom {
+		
+		.edgtf-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include edgtfTransform(scale(1.04));
+				}
+			}
+			
+			img {
+				@include edgtfTransform(scale(1));
+				@include edgtfTransitionTransform(.3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.edgtf-image-behavior-grayscale {
+		
+		.edgtf-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include edgtfTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

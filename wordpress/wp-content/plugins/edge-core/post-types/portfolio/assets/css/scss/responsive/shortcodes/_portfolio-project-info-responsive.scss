@@ -1,0 +1,47 @@
+@include ipad-landscape {
+    .edgtf-portfolio-project-info {
+
+        .edgtf-portfolio-project-info-aalto-type {
+            .edgtf-ppi-title-holder.edgtf-ppi-square .edgtf-ppi-title-inner {
+                padding-left: 40px;
+            }
+            .edgtf-ppi-excerpt-wrap {
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    .edgtf-portfolio-project-info {
+
+        .edgtf-portfolio-project-info-aalto-type {
+            .edgtf-ppi-title-holder.edgtf-ppi-square .edgtf-ppi-title-inner {
+                padding-left: 20px;
+            }
+            .edgtf-ppi-excerpt-wrap {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+    .edgtf-portfolio-project-info {
+        .edgtf-portfolio-project-info-aalto-type {
+            .edgtf-ppi-table-holder {
+                display: block;
+
+                &:after {
+                    display: none;
+                }
+            }
+            .edgtf-ppi-table-holder .edgtf-ppi-table-left,
+            .edgtf-ppi-table-holder .edgtf-ppi-table-right {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}

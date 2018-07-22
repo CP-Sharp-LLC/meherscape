@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Fullscreen Portfolio Grid style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-section-holder{
+	@include edgtfRelativeHolderLayout();
+	z-index: 90;
+
+	.edgtf-portfolio-section-holder-inner{
+		background-color: rgba(30,30,30,0.4);
+	}
+
+	.edgtf-section-item{
+		position: relative;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		box-sizing: border-box;
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 1px;
+			bottom: 1px;
+			background-color: rgba(0, 0, 0, 0.2);
+			opacity: 0;
+			@include edgtfTransition(opacity .2s ease-out);
+		}
+
+		.edgtf-section-item-inner{
+			position: relative;
+			padding: 50px 0;
+			z-index: 10;
+		}
+
+		.edgtf-section-item-table{
+			display: table;
+			width: 100%;
+		}
+
+		.edgtf-section-item-table-cell{
+			display: table-cell;
+			vertical-align: middle;
+
+			&.edgtf-section-item-title{
+				width: 40%;
+				text-align: left;
+			}
+
+			&.edgtf-section-item-category{
+				text-align: center;
+			}
+
+			&.edgtf-section-item-read-more{
+				width: 40%;
+				text-align: right;
+			}
+		}
+
+		.edgtf-section-link{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 20;
+		}
+
+		.edgtf-pli-category-holder{
+			a{
+				position: relative;
+				color: #fff;
+				z-index: 30;
+			}
+		}
+
+		.edgtf-pli-title{
+			color: #fff;
+			margin: 0;
+		}
+
+		.edgtf-btn.edgtf-btn-simple {
+			position: relative;
+			color: #fff;
+			z-index: 30;
+
+			&:hover {
+				color: #fff!important;;
+			}
+		}
+
+		&.hovered{
+
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+
+	.edgtf-portfolio-section-image-holder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+    	background-color: $first-main-color;
+		z-index: -1;
+
+		.edgtf-image-url-holder-inner{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			height: 100%;
+			@include edgtfTransition(opacity 1s);
+
+			&.hovered{
+				@include edgtfTransition(opacity .5s cubic-bezier(0.4, 0.24, 0.06, 0.91));
+				opacity: 1;
+			}
+		}
+
+		.edgtf-image-url{
+			height: 100%;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */

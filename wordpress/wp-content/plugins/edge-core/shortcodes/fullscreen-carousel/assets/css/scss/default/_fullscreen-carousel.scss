@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Fullscreen Carousel shortcode style - begin
+   ========================================================================== */
+.edgtf-fullscreen-carousel-holder {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	visibility: hidden;
+
+	.edgtf-fsc-next-trigger {
+		position: absolute;
+		top:0;
+		right: 0;
+		height: 100%;
+		width: 13%;
+		z-index: 200;
+		cursor: pointer;
+	}
+
+	.edgtf-fsc-item-text-holder-inner {
+		position: absolute;
+		top: 0;
+		left: 6vw;
+		width: 30vw;
+		height: 100%;
+		@include edgtfTransitionTransform(.5s cubic-bezier(.78,.11,0,.84));
+
+		.edgtf-fsc-item-text-holder-table {
+			@include edgtfTableLayout();
+		}
+
+		.edgtf-fsc-item-text-holder-cell {
+			@include edgtfTableCellLayout();
+		}
+	}
+	
+	.edgtf-fsc-item-title {
+		display: inline-block;
+		margin-bottom: 3px;
+	}
+
+	.edgtf-fsc-item-image {
+		position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: 100vw;
+	    height: 100%;
+	    background: no-repeat 50% 50%;
+	    background-size: cover;
+
+		&:before {
+			content: '';
+			@include edgtfAbsoluteHolderLayout();
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.14) 64%, rgba(0,0,0,0.47) 92%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.14) 64%,rgba(0,0,0,0.47) 92%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.14) 64%,rgba(0,0,0,0.47) 92%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		}
+	}
+
+	.edgtf-fsc-item {
+		.edgtf-fsc-item-text-holder,
+		.edgtf-fsc-item-image-holder {
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			height: 100%;
+			right: -10%;
+			@include edgtfTransition(width .5s cubic-bezier(.78,.11,0,.84), padding-left .5s cubic-bezier(.78,.11,0,.84), right .35s);
+		}
+
+		.edgtf-fsc-item-text-holder {
+			z-index: 150;
+		}
+
+		&.edgtf-remove {
+			.edgtf-fsc-item-text-holder {
+				right: 0;
+				width: 100%;
+				@include edgtfTransform(translate3d(-100%, 0, 0));
+				@include edgtfTransition(all 1s);
+				z-index: 150;
+			}
+
+			.edgtf-fsc-item-image-holder {
+				right: 0;
+				width: 100%;
+			}
+		}
+
+		&.edgtf-active {
+			.edgtf-fsc-item-text-holder {
+				right: 0;
+				width: 100%;
+				z-index: 150;
+
+			}
+			.edgtf-fsc-item-image-holder {
+				right: 0;
+				width: 100%;
+				z-index: 100;
+			}
+		}	
+
+		&.edgtf-next {
+			.edgtf-fsc-item-text-holder {
+				padding-left: 10%;
+				width: 10%;
+				z-index: 150;
+			}
+
+			.edgtf-fsc-item-image-holder {
+				width: 10%;
+				padding-left: 10%;
+				z-index: 120;
+			}
+		}
+
+		&:not(.edgtf-remove):not(.edgtf-active):not(.edgtf-next) {
+			width: 0%;
+		}
+	}
+
+	&.edgtf-peek {
+		.edgtf-fsc-item {
+			&.edgtf-next {
+				.edgtf-fsc-item-text-holder,
+				.edgtf-fsc-item-image-holder {
+					padding-left: 14%;
+				}
+			}
+
+			&.edgtf-active {
+				.edgtf-fsc-item-text-holder-inner {
+					@include edgtfTransform(translate3d(-4%, 0, 0));
+				}
+			}
+		}
+	}
+
+	&.edgtf-fsc-with-progress-indicator {
+		.edgtf-fsc-indicator-holder {
+			position: absolute;
+			left: 6vw;
+			bottom: 40px;
+			z-index: 300;
+			pointer-events:none;
+
+			.edgtf-fsc-indicator-bullet {
+				display: inline-block;
+				height: 6px;
+				width: 30px;
+				margin-right: 10px;
+				@include edgtfTransformOrigin(50% 100%);
+				@include edgtfTransition(all .2s);
+
+				&:not(.edgtf-active) {
+					opacity: 0.5;
+					@include edgtfTransform(scaleY(.3));
+				}
+			}
+		}
+	}
+
+	&.edgtf-fsc-light-skin {
+		.edgtf-fsc-item-title,
+		.edgtf-fsc-btn {
+			color: $header-light-color !important;
+
+			&:hover {
+				color: $header-light-color !important;
+			}
+		}
+
+		.edgtf-fsc-indicator-bullet {
+			background-color: $header-light-color;
+		}
+	}
+
+	&.edgtf-fsc-dark-skin {
+		.edgtf-fsc-item-title,
+		.edgtf-fsc-btn {
+			color: $header-dark-color;
+		}
+
+		.edgtf-fsc-indicator-bullet {
+			background-color: $header-dark-color;
+		}
+	}
+}
+/* ==========================================================================
+   Fullscreen Carousel shortcode style - end
+   ========================================================================== */

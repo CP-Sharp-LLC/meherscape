@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Info Boxes shortcode style - begin
+   ========================================================================== */
+.edgtf-info-boxes-outer{
+	@include edgtfRelativeHolderLayout();
+
+	&.edgtf-ib-three-columns{
+		.edgtf-info-boxes-inner{
+			width: 33%;
+		}
+	}
+
+	&.edgtf-ib-four-columns{
+		.edgtf-info-boxes-inner{
+			width: 25%;
+		}
+	}
+	
+	.edgtf-info-boxes-inner{
+		float: left;
+		padding: 0 1px;
+		box-sizing: border-box;
+
+		&:hover{
+			.edgtf-ib-text,
+			.edgtf-ib-button{
+				display: block;
+			}
+		}
+	}
+
+	.edgtf-info-boxes-holder {
+		@include edgtfRelativeHolderLayout();
+		padding-top: 100%;
+
+		.edgtf-ib-inner{
+			@include edgtfAbsoluteHolderLayout();
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.edgtf-ib-image {
+			@include edgtfRelativeHolderLayout();
+
+			a, img {
+				position: relative;
+				display: block;
+			}
+		}
+
+		.edgtf-ib-text-holder {
+			@include edgtfRelativeHolderLayout();
+			@include edgtfTableLayout();
+		}
+
+		.edgtf-ib-text-inner{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.edgtf-ib-title {
+			margin: 0;
+		}
+
+		.edgtf-ib-text {
+			margin: 0;
+			padding: 30px 35px 27px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.edgtf-ib-front{
+			opacity: 1;
+			@include edgtfTransform(rotateY(0));
+			@include edgtfTransition(all .6s cubic-bezier(.25,.1,.11,1.33));
+		}
+
+		.edgtf-ib-back{
+			background-color: #fff;
+			opacity: 0;
+			@include edgtfTransform(rotateY(-180deg));
+			@include edgtfTransitionTransform(.6s cubic-bezier(.25,.1,.11,1.33), opacity .3s);
+
+			.edgtf-btn{
+				text-align: left;
+			}
+		}
+
+		.no-touch & {
+			&:hover {
+				.edgtf-ib-front{
+					opacity: 0;
+					@include edgtfTransform(rotateY(180deg));
+				}
+
+				.edgtf-ib-back{
+					opacity: 1;
+					@include edgtfTransform(rotateY(0));
+				}
+			}
+		}
+
+		.touch & {
+			&.edgtf-ib-touch-anim {
+				.edgtf-ib-front{
+					opacity: 0;
+					@include edgtfTransform(rotateY(180deg));
+				}
+
+				.edgtf-ib-back{
+					opacity: 1;
+					@include edgtfTransform(rotateY(0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Info Boxes shortcode style - end
+   ========================================================================== */

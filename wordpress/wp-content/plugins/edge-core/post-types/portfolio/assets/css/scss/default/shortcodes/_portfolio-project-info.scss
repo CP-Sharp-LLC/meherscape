@@ -1,0 +1,250 @@
+/* ==========================================================================
+   Portfolio Project Info shortcode style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-project-info {
+    position: relative;
+	vertical-align: middle;
+
+	.edgtf-ppi-label {
+		margin: 0;
+		padding: 0;
+	}
+
+	> div {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 5px 0 0;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	.edgtf-ppi-title-holder {
+		@include edgtfRelativeHolderLayout();
+		box-sizing: border-box;
+
+		&.edgtf-ppi-square {
+
+			&.edgtf-st-position-right{
+				text-align: right;
+
+				.edgtf-ppi-square-holder{
+					.line-top,
+					.line-bottom,
+					.line-right{
+						right: 0;
+						left: auto;
+					}
+
+					.line-left{
+						right: 172px;
+						left: auto;
+					}
+					.line-mask {
+						right: 172px;
+						left: auto;
+					}
+				}
+
+				.edgtf-ppi-title-inner {
+					padding: 11px 80px 11px 0;
+				}
+			}
+
+			>div{
+				vertical-align: middle;
+			}
+
+			.edgtf-ppi-square-holder{
+				position: relative;
+				display: inline-block;
+				color: #eaecf3;
+
+				>span{
+					position: absolute;
+					content: "";
+					background-color: currentColor;
+				}
+
+				.line-top,
+				.line-bottom{
+					height: 5px;
+					width: 172px;
+					left: 0;
+				}
+
+				.line-right,
+				.line-left{
+					width: 5px;
+					height: 100%;
+				}
+
+				.line-top{
+					top: 0;
+				}
+				.line-right{
+					left: 172px;
+				}
+				.line-bottom{
+					bottom: 0;
+				}
+				.line-left{
+					left: 0;
+				}
+				.line-mask {
+					width: 5px;
+					height: calc(100% - 26px);
+					top: 13px;
+					z-index: 50;
+					left: 172px;
+				}
+			}
+
+			.edgtf-ppi-title-inner{
+				display: inline-block;
+				position: relative;
+				z-index: 150;
+				padding: 11px 0 11px 80px;
+			}
+		}
+
+		.edgtf-ppi-title {
+			display: block;
+			margin: 4px 10px;
+		}
+	}
+
+    .edgtf-ppi-excerpt-wrap {
+        margin-left: 90px;
+        margin-bottom: 42px;
+    }
+	
+	.edgtf-ppi-image {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		
+		img {
+			display: block;
+		}
+	}
+
+	.edgtf-portfolio-project-info-aalto-type {
+
+        display: block;
+        padding: 0 16px;
+        box-sizing: border-box;
+
+		.edgtf-ppi-table-holder {
+			display: table;
+            width: 100%;
+            position: relative;
+			table-layout: fixed;
+
+			.edgtf-ppi-table-left,
+			.edgtf-ppi-table-right {
+				display: table-cell;
+				vertical-align: top;
+				padding: 0 16px;
+				box-sizing: border-box;
+				width: 50%;
+			}
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 40%;
+                background-image: url('img/default_pattern.png');
+                background-repeat: repeat;
+                z-index: -1;
+                bottom: 15%;
+                left: 0;
+            }
+		}
+	}
+
+	&.edgtf-appear-fx {
+		.edgtf-ppi-title-wrap,
+		.edgtf-ppi-excerpt-wrap {
+			overflow: hidden;
+		}
+
+		.edgtf-ppi-title,
+		.edgtf-ppi-excerpt {
+			@include edgtfTransform(translate3d(-110%, 0, 0));
+		}
+
+		.edgtf-ppi-image {
+			&.edgtf-first {
+				-webkit-clip-path: inset(0 0 0 100%);
+				clip-path: inset(0 0 0 100%);
+			}
+
+			&.edgtf-second {
+				-webkit-clip-path: inset(0 100% 0 0);
+				clip-path: inset(0 100% 0 0);
+			}
+		}
+
+		.no-touch & {
+		    .edgtf-ppi-title {
+		        @include edgtfTransitionTransform(.55s cubic-bezier(0.6, 0.3, 0.11, 0.86) .25s);
+		    }
+
+		    .edgtf-ppi-excerpt {
+		        @include edgtfTransitionTransform(.55s cubic-bezier(0.6, 0.3, 0.11, 0.86) .4s);
+		    }
+
+		    .edgtf-ppi-image {
+				&.edgtf-first {
+				    @include edgtfTransition(.7s cubic-bezier(0.6, 0.3, 0.11, 0.86));
+				}
+
+				&.edgtf-second {
+				    @include edgtfTransition(.7s cubic-bezier(0.6, 0.3, 0.11, 0.86) .5s);
+				}
+		    }
+		}
+
+		.touch &,
+		&.edgtf-appear {
+			.edgtf-ppi-title,
+			.edgtf-ppi-excerpt {
+				@include edgtfTransform(translate3d(0, 0, 0));
+			}
+
+			.edgtf-ppi-image {
+				-webkit-clip-path: inset(0 0 0 0);
+				clip-path: inset(0 0 0 0);
+			}
+		}
+
+		//ie fallback
+		.no-touch .edgtf-ms-explorer & {
+		    .edgtf-ppi-image {
+		        opacity: 0;
+		    }
+		}
+
+		.touch .edgtf-ms-explorer &,
+		.edgtf-ms-explorer &.edgtf-appear {
+		    .edgtf-ppi-image {
+		        opacity: 1;
+		    }
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Project Info shortcode style - end
+   ========================================================================== */

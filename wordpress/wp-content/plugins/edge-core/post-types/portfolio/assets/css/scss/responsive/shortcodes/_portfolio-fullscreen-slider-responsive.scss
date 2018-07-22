@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Fullscreen Portfolio Grid style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-fullscreen-slider-holder{
+
+	@include ipad-landscape{
+
+		.edgtf-pfs-articles-holder{
+			width: 40%;
+		}
+
+		.edgtf-pfs-image-holder{
+
+			.edgtf-pfs-text-holder{
+				padding: 0 40% 0 8%;
+			}
+		}
+	}
+
+	@include phone-landscape{
+		
+		.edgtf-pfs-item .edgtf-pfs-item-inner {
+			.edgtf-pfs-category{
+				display: none;
+			}
+
+			.edgtf-pfs-order{
+				width: 40px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */

@@ -1,0 +1,66 @@
+/* ==========================================================================
+# Portfolio Single Split Screen - begin
+========================================================================== */
+
+.edgtf-portfolio-single-holder {
+
+    &.edgtf-ps-split-screen-layout {
+
+        margin: 0;
+
+        @include keyframes(edgtfUpDown) {
+            0%,100%{
+                @include edgtfTransform(translate3d(0,0,0));
+            }
+            50%{
+                @include edgtfTransform(translate3d(0, 10px, 0));
+            }
+        }
+
+        .edgtf-portfolio-title{
+            margin-bottom: 9px;
+        }
+
+        .edgtf-ps-info-holder{
+            opacity: 0;
+            width: 576px;
+            max-width: 60%;
+            box-sizing: border-box;
+            @include edgtfTransition(all .2s ease-out);
+
+            &.edgtf-appeared{
+                opacity: 1;
+            }
+
+            &.edgtf-animating{
+                @include edgtfAnimation(edgtfUpDown 1s 1 ease 0s);
+            }
+        }
+
+        .edgtf-grid-col-6:first-child {
+            padding-right: 0;
+        }
+
+        .edgtf-grid-col-6:last-child {
+            padding-left: 7%;
+        }
+
+        .edgtf-ps-image {
+            img {
+                display: block;
+            }
+        }
+
+        .edgtf-ps-content-item {
+            padding-bottom: 62px;
+            border-bottom: 1px solid #e0e4f2;
+            margin: 0 0 62px;
+        }
+
+    }
+
+}
+
+/* ==========================================================================
+# Portfolio Single Split Screen - end
+========================================================================== */

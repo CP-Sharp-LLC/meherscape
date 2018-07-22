@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.edgtf-testimonials-holder {
+    
+    .edgtf-testimonials {
+        position: relative;
+    }
+    .edgtf-testimonial-content,
+    .edgtf-testimonial-text-holder {
+        @include edgtfRelativeHolderLayout();
+    }
+
+    .edgtf-testimonials {
+        box-sizing: border-box;
+    }
+
+    .edgtf-testimonial-image {
+
+        img {
+            width: auto !important;
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

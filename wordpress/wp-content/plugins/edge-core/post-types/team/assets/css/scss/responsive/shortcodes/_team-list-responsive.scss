@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Team list shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape {
+	
+	.edgtf-team-list-holder {
+
+        $gallery_columns_number: ('four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.edgtf-tl-#{nth($gallery_columns_number,$i+1)}-columns {
+                $gallery_item_size: 100% / 3;
+
+                .edgtf-team {
+                    width: $gallery_item_size;
+                }
+
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .edgtf-team {
+
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include ipad-landscape {
+	
+	.edgtf-team-list-holder {
+
+        $gallery_columns_number: ('three', 'four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.edgtf-tl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                .edgtf-team {
+                    width: 50%;
+                }
+
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    .edgtf-team {
+
+                        &:nth-child(2n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include ipad-portrait {
+    .edgtf-team.info-hover {
+        .edgtf-team-inner {
+            display: block;
+
+            .edgtf-team-info-tb,
+            .edgtf-team-image {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+
+            .edgtf-team-info-tb {
+                padding: 0;
+                margin-bottom: 5px;
+            }
+
+            .edgtf-team-info-tc {
+                border-right: 1px solid #d2d2d2;
+            }
+
+            .edgtf-team-image img {
+                width: 100%;
+            }
+            .edgtf-team-bg {
+                display: none;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+	
+	.edgtf-team-list-holder .edgtf-tl-inner .edgtf-team {
+		width: 100%;
+	}
+}
+/* ==========================================================================
+   Team list shortcode responsive style - end
+   ========================================================================== */

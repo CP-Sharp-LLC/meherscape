@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Fullscreen Portfolio Grid style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-fullscreen-slider-holder{
+	@include edgtfRelativeHolderLayout();
+	height: 100vh;
+	opacity: 1;
+	@include edgtfTransition(opacity .2s ease-out);
+
+	.edgtf-pfs-articles-holder{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 30%;
+		background-color: rgba(0,0,0,0.4);
+		z-index: 20;
+		@include edgtfTransform(translate3d(100%, 0, 0));
+	}
+
+	&.edgtf-initialized {
+		.edgtf-pfs-articles-holder {
+			@include edgtfTransform(translate3d(0, 0, 0));
+            @include edgtfTransitionTransform(.5s cubic-bezier(0.65, 0.17, 0, 0.92));
+		}
+	}
+
+	.edgtf-pfs-item{
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.1);
+			opacity: 0;
+			z-index: -1;
+			@include edgtfTransition(opacity .2s ease-out);
+			-webkit-backface-visibility: hidden;
+		}
+
+		.edgtf-pfs-item-inner{
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+
+			.edgtf-pfs-item-table-cell{
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.edgtf-pfs-order{
+				width: 80px;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 300;
+				font-style: italic;
+				font-family: $default-heading-font;
+				text-align: center;
+			}
+
+			.edgtf-pfs-category{
+				width: 33%;
+			}
+		}
+
+		.edgtf-pfs-link{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		&.hovered{
+			&:after{
+				opacity: 1;
+			}
+		}
+
+		.edgtf-pli-title{
+			color: #fff;
+		}
+
+		.edgtf-pli-category{
+			position: relative;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 300;
+			font-style: italic;
+			font-family: $default-heading-font;
+			z-index: 50;
+		}
+	}
+
+	.edgtf-pfs-image-holder{
+		width: 100%;
+		height: 100%;
+		background-color: $first-main-color;
+
+		.edgtf-pfs-image-holder-item{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			height: 100%;
+			background-position: center;
+			background-size: cover;
+			@include edgtfTransition(opacity .6s);
+
+			&.hovered{
+			    @include edgtfTransition(opacity .4s cubic-bezier(0.4, 0.24, 0.06, 0.91));
+			    opacity: 1;
+			}
+		}
+
+		.edgtf-pfs-text-holder{
+			display: table;
+			width: 100%;
+			height: 100%;
+			padding: 0 35% 0 19%;
+			box-sizing: border-box;
+
+			.edgtf-pfs-text-holder-inner{
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.edgtf-pfs-item-desc{
+				color: #fff;
+				max-width: 70%;
+			}
+
+			.edgtf-btn.edgtf-btn-simple{
+				color: #fff;
+
+				&:hover {
+					color: #fff!important;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */

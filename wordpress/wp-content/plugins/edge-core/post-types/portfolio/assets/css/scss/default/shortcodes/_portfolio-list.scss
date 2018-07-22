@@ -1,0 +1,774 @@
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+    @include edgtfRelativeHolderLayout();
+
+	/***** Article Global Style - begin *****/
+
+    article {
+	    @include edgtfRelativeHolderLayout();
+        box-sizing: border-box;
+
+	    .touch & {
+		    cursor: pointer;
+	    }
+
+	    .edgtf-pl-item-inner {
+		    @include edgtfRelativeHolderLayout();
+	    }
+	    
+	    .edgtf-pli-image {
+		    @include edgtfRelativeHolderLayout();
+		    
+		    img {
+			    display: block;
+			    width: 100%;
+		    }
+	    }
+
+	    .edgtf-pli-link {
+		    @include edgtfAbsoluteHolderLayout();
+	    }
+
+	    .edgtf-pli-text-wrapper {
+	        @include edgtfTableLayout();
+	    }
+
+	    .edgtf-pli-text {
+		    @include edgtfTableCellLayout();
+
+		    .edgtf-pli-title {
+				margin: 0;
+		    }
+
+		    .edgtf-pli-category-holder {
+			    position: relative;
+			    display: block;
+			    line-height: 19px;
+			    margin: 0;
+
+			    a {
+				    position: relative;
+				    display: inline-block;
+				    vertical-align: middle;
+				    font-size: 16px;
+				    font-family: $default-heading-font;
+				    font-weight: 300;
+				    font-style: italic;
+				    line-height: inherit;
+				    padding: 0 6px 0 0;
+				    margin: 0 3px 0 0;
+				    z-index: 8;
+				    
+				    &:after {
+					    position: absolute;
+					    top: 0;
+					    right: -4px;
+					    content: '/';
+					    color: inherit;
+					    font-size: 12px;
+					    line-height: inherit;
+				    }
+
+				    &:last-child {
+					    margin: 0;
+					    padding: 0;
+					    
+					    &:after {
+						    display: none;
+					    }
+				    }
+			    }
+		    }
+
+		    .edgtf-pli-excerpt {
+			    margin: 3px 0 0;
+		    }
+	    }
+    }
+
+	/***** Article Global Style - end *****/
+	
+	/***** Specific Global Style - begin *****/
+	
+	&.edgtf-pl-has-shadow {
+		
+		article {
+			
+			.edgtf-pli-image {
+				box-shadow: $default-box-shadow;
+			}
+		}
+	}
+	
+	&.edgtf-pl-has-filter {
+		
+		.edgtf-pl-inner {
+			overflow: hidden;
+		}
+	}
+	
+	&.edgtf-pl-no-content {
+		
+		.edgtf-pli-text-holder {
+			display: none;
+		}
+	}
+	/***** Specific Global Style - end *****/
+	
+	/***** Portfolio Types - begin *****/
+	
+	&.edgtf-pl-gallery {
+		
+		&:not(.edgtf-pl-one-column) {
+			
+			article {
+				float: left;
+			}
+		}
+		
+		$gallery_columns_number: ('two', 'three', 'four', 'five');
+		
+		@for $i from 0 to length($gallery_columns_number) {
+			&.edgtf-pl-#{nth($gallery_columns_number,$i+1)}-columns {
+				
+				article {
+					width: 100% / ($i+2);
+				}
+				
+				@if ($i > 1) { // set different break point for four and five columns
+					@media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+						
+						article {
+							
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				} @else {
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+						
+						article {
+							
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&.edgtf-pl-masonry {
+		
+		.edgtf-pl-inner {
+			opacity: 0;
+		}
+		
+		article,
+		.edgtf-pl-grid-sizer {
+			width: 100%;
+		}
+		
+		.edgtf-pl-grid-gutter {
+			width: 0;
+		}
+		
+		$masonry_columns_number: ('two', 'three', 'four', 'five');
+		
+		@for $i from 0 to length($masonry_columns_number) {
+			&.edgtf-pl-#{nth($masonry_columns_number,$i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				article,
+				.edgtf-pl-grid-sizer {
+					width: $column_width;
+				}
+				
+				article {
+					
+					&.edgtf-pl-masonry-large-width,
+                    &.edgtf-pl-masonry-large-width-height {
+						width: $column_width * 2;
+					}
+				}
+			}
+		}
+
+        &.edgtf-pl-images-fixed {
+	        
+            article {
+	            
+                .edgtf-pl-item-inner {
+                    height: 100%;
+                }
+	
+	            .edgtf-pli-image {
+		            height: 100%;
+		
+		            img {
+			            height: 100%;
+		            }
+	            }
+            }
+        }
+	}
+
+	&.edgtf-pl-scrollable {
+
+		/* Portfolio Scrollable List style start */
+
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin-top: 15px;
+		overflow:hidden;
+
+		&.edgtf-ptf-hovered{
+
+			.edgtf-ptf-list-showcase-preview-item {
+				a {
+					position: relative;
+
+               		&:after {
+	                    content: '';
+	                    position: absolute;
+	                    top: 0;
+	                    left: 0;
+	                    width: 100%;
+	                    height: 100%;
+	                    background: rgba(255,255,255,.23) url('img/default_pattern.png') repeat scroll inherit !important;
+	                    @include edgtfTransition(opacity .4s);
+	                    opacity: 1;
+	                }
+	            }
+
+                &.active a:after {
+            		opacity: 0;
+                }
+			}
+		}
+
+        .edgtf-pl-inner {
+            font-size: 0;
+			margin: 0;
+        }
+
+		.edgtf-ptf-list-showcase-preview-title-resp{
+			display: none;
+		}
+
+		.edgtf-ptf-list-showcase-meta {
+			width: 32%;
+			height:100%;
+			display:inline-block;
+			vertical-align: top;
+			position: relative;
+			box-sizing: border-box;
+
+			&.edgtf-fix-meta{
+				.edgtf-ptf-list-showcase-meta-inner{
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 40%;
+					@include edgtfTransition(top .2s ease-out);
+				}
+			}
+
+			&.edgtf-fix-bottom{
+				.edgtf-ptf-list-showcase-meta-inner{
+					@include edgtfTransition(none);
+				}
+			}
+		}
+
+		.edgtf-ptf-list-showcase-meta-item{
+			cursor:pointer;
+			border-bottom:1px solid rgba($first-main-color, .1);
+			background-color:transparent;
+			box-sizing: border-box;
+			@include edgtfTransition(border-color .5s cubic-bezier(.02, .01, .47, 1), background-color .5s cubic-bezier(.02, .01, .47, 1));
+
+			&:last-child{
+				border-bottom: none;
+			}
+
+			&.active,
+			&:hover {
+				background-color: #f7f7f7;
+			}
+		}
+
+		.edgtf-ptf-meta-item-date-year{
+			padding-left: 15px;
+            font-size: 16px;
+            color: rgba(0,0,0,.7);
+            font-style: italic;
+		}
+
+		.edgtf-ptf-meta-item-date-year,
+		.edgtf-ptf-meta-item-title{
+			line-height: 26px;
+            font-family: $default-heading-font;
+		}
+
+		.edgtf-ptf-meta-headings,
+		.edgtf-ptf-list-showcase-meta-item{
+			display:table;
+			width:100%;
+			table-layout:fixed;
+		}
+
+		.edgtf-ptf-list-showcase-meta-items-holder{
+			padding-bottom: 30px;
+			padding-left: 0;
+		}
+
+		.edgtf-ptf-list-showcase-meta-item{
+			.edgtf-ptf-meta-item-date-year,
+			.edgtf-ptf-meta-item-title,
+			.edgtf-ptf-view-holder{
+				display:table-cell;
+				vertical-align:middle;
+			}
+		}
+
+		.edgtf-ptf-meta-headings h4{
+			display:table-cell;
+			vertical-align:middle;
+			padding-bottom: 7px;
+			letter-spacing: 1px;
+		}
+
+		.edgtf-ptf-meta-item-title{
+			width: 77.3%;
+		}
+
+		.edgtf-ptf-meta-item-title a{
+			display:block;
+			padding: 15px 20px 15px 3%;
+			width:100%;
+			height:100%;
+			box-sizing: border-box;
+
+			.edgtf-ptf-list-showcase-meta-item &:hover{
+				color: initial;
+			}
+
+			.edgtf-ptf-list-showcase-meta-item.active &:hover{
+				color: $first-main-color;
+			}
+		}
+
+		.edgtf-ptf-list-showcase-preview {
+			display: inline-block;
+			vertical-align: middle;
+			width: 68%;
+			-webkit-overflow-scrolling: touch;
+			@include edgtfTransform(translate3d(0,0,0));
+			box-sizing: border-box;
+
+			.edgtf-column .edgtf-column-inner{
+				padding:0;
+			}
+
+			.edgtf-three-columns-inner,
+			.edgtf-two-columns-50-50-inner{
+				margin: 0;
+			}
+		}
+
+		.edgtf-featured-images-on-left {
+			.edgtf-ptf-list-showcase-preview {
+				float: left;
+			}
+			.edgtf-ptf-list-showcase-preview-item{
+				padding-left:0;
+				padding-right:40px;
+			}
+			.edgtf-ptf-list-showcase-meta{
+				float: right;
+
+
+				&.edgtf-fix-meta{
+					.edgtf-ptf-list-showcase-meta-inner{
+						right: 0;
+						left: auto;
+					}
+				}
+			}
+		}
+
+		.edgtf-three-images-scrollable {
+			.edgtf-ptf-list-showcase-preview {
+				width: 70%;
+			}
+
+			.edgtf-ptf-list-showcase-meta {
+				width: 30%;
+			}
+
+			&.edgtf-featured-images-on-left {
+				.edgtf-ptf-list-showcase-preview {
+					left: 0;
+				}
+				.edgtf-ptf-list-showcase-meta {
+					left: 70%;
+				}
+			}
+		}
+
+		.edgtf-ptf-list-showcase-preview::-webkit-scrollbar {
+			display: none;
+		}
+
+		.edgtf-ptf-list-showcase-preview-item{
+			padding-bottom:25px;
+			padding-left: 40px;
+			cursor:pointer;
+			&:last-child{
+				padding-bottom:0;
+			}
+
+            .edgtf-three-columns .edgtf-column {
+                width: 33.33%;
+                float: left;
+            }
+		}
+
+		.edgtf-ptf-list-showcase-meta-item .edgtf-ptf-view-holder{
+			font-size:14px;
+			color:$first-main-color;
+		}
+
+		.edgtf-ptf-view-holder{
+			width: 9%;
+			text-align: center;
+		}
+
+		.edgtf-ptf-list-showcase-preview-item a{
+			display: table;
+			table-layout: fixed;
+		}
+
+		.edgtf-ptf-list-showcase-preview-item img {
+			display: table-cell;
+			width:100%;
+			height:auto;
+			vertical-align: top;
+			padding-right: 1px;
+			box-sizing: border-box;
+			-webkit-filter: none;
+			filter: none;
+			@include edgtfTransition(all .5s ease-out);
+		}
+
+
+		/* Portfolio Scrollable List style end*/
+
+	}
+
+	/***** Portfolio Types - end *****/
+
+	/***** Additional Features - begin *****/
+
+	&.edgtf-pl-has-animation {
+
+		article {
+			opacity: 0;
+			@include edgtfTransform(translateY(80px));
+			@include edgtfTransition(opacity .8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform .8s cubic-bezier(0.34, 0.52, 0.57, 1.04));
+
+			&.edgtf-item-show {
+				opacity: 1;
+				@include edgtfTransform(translateY(0));
+
+				&.edgtf-item-shown {
+					@include edgtfTransition(none);
+				}
+			}
+			
+			.touch & {
+				opacity: 1;
+				@include edgtfTransform(translateY(0));
+			}
+		}
+	}
+
+	/***** Additional Features - end *****/
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+
+.edgtf-pl-filter-holder {
+    @include edgtfRelativeHolderLayout();
+    margin: 0 0 30px;
+    text-align: center;
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0 10px;
+	        padding: 0 22px;
+            cursor: pointer;
+	        
+	        @include laptop-landscape-large {
+		        padding: 0 16px;
+	        }
+	
+	        @include ipad-landscape {
+		        padding: 0 10px;
+	        }
+
+            span {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: $default-heading-color;
+                white-space: nowrap;
+                @include edgtfTransition(color .2s ease-out);
+				font-size: 16px;
+				font-family: $default-heading-font;
+				font-weight: 300;
+				text-transform: none;
+				letter-spacing: 0.02em;
+				line-height: 1.63em;
+            }
+
+            &.edgtf-pl-current,
+            &:hover {
+
+                span {
+                    color: rgba($default-text-color, .4);
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-pag-standard {
+		
+		.edgtf-pl-inner {
+			opacity: 1;
+			@include edgtfTransition(opacity .2s ease-out);
+		}
+		
+		&.edgtf-pl-pag-standard-animate {
+			
+			.edgtf-pl-inner {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.edgtf-pl-standard-pagination {
+	@include edgtfRelativeHolderLayout();
+	margin: 20px 0 0;
+	clear: both;
+	
+	ul {
+		@include edgtfRelativeHolderLayout();
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		
+		li {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 12px;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+				padding: 0;
+			}
+			
+			&.edgtf-pl-pag-active {
+				
+				a {
+					color: $first-main-color;
+				}
+			}
+			
+			&.edgtf-pl-pag-prev,
+			&.edgtf-pl-pag-next {
+				position: absolute;
+				top: 0;
+				
+				a {
+					font-size: 30px;
+					@include edgtfTransition(color .2s ease-out, opacity .2s ease-out);
+					
+					span {
+						display: block;
+						line-height: inherit;
+						
+						&:before {
+							display: block;
+							line-height: inherit;
+						}
+					}
+				}
+			}
+			
+			&.edgtf-pl-pag-prev {
+				left: 0;
+				
+				a {
+					opacity: 0;
+				}
+			}
+			
+			&.edgtf-pl-pag-next {
+				right: 0;
+				
+				a {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+
+.edgtf-pl-load-more-holder {
+	@include edgtfRelativeHolderLayout();
+
+    .edgtf-pl-load-more {
+	    margin: 40px 0 0;
+	    text-align: center;
+    }
+}
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+
+.edgtf-pl-loading {
+	position: relative;
+	display: none;
+	width: 100%;
+	margin: 40px 0 20px;
+	color: $default-heading-color;
+	text-align: center;
+
+	&.edgtf-filter-trigger {
+		position: absolute;
+		top: 250px;
+		left: 0;
+	}
+	
+    &.edgtf-standard-pag-trigger {
+		position: absolute;
+		top: 50px;
+		left: 0;
+	
+	    .edgtf-pl-has-filter & {
+		    top: 150px;
+	    }
+    }
+
+	&.edgtf-showing {
+		display: block;
+	}
+
+	> div {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 14px;
+		margin: 0 3px;
+		background-color: $default-heading-color;
+		border-radius: 100%;
+		@include edgtfAnimation(sk-bouncedelay 1.4s infinite ease-in-out both);
+	}
+
+	.edgtf-pl-loading-bounce1 {
+		-webkit-animation-delay: -0.32s;
+		-moz-animation-delay: -0.32s;
+		animation-delay: -0.32s;
+	}
+
+	.edgtf-pl-loading-bounce2 {
+		-webkit-animation-delay: -0.16s;
+		-moz-animation-delay: -0.16s;
+		animation-delay: -0.16s;
+	}
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+	}
+}
+
+@-moz-keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		-moz-transform: scale(0);
+	}
+	40% {
+		-moz-transform: scale(1.0);
+	}
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */

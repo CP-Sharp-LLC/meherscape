@@ -1,0 +1,1029 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgtf-btn.edgtf-btn-large, .edgtf-btn.edgtf-btn-huge {
+    padding: 17px 63px 18px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .edgtf-call-to-action-holder .edgtf-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edgtf-call-to-action-holder.edgtf-three-quarters-columns .edgtf-cta-text-holder, .edgtf-call-to-action-holder.edgtf-four-fifths-columns .edgtf-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+  .edgtf-call-to-action-holder.edgtf-three-quarters-columns .edgtf-cta-button-holder, .edgtf-call-to-action-holder.edgtf-four-fifths-columns .edgtf-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-call-to-action-holder.edgtf-normal-layout .edgtf-cta-inner,
+  .edgtf-call-to-action-holder.edgtf-normal-layout .edgtf-cta-text-holder,
+  .edgtf-call-to-action-holder.edgtf-normal-layout .edgtf-cta-button-holder {
+    display: block;
+  }
+  .edgtf-call-to-action-holder.edgtf-normal-layout .edgtf-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+  .edgtf-call-to-action-holder.edgtf-two-halves-columns .edgtf-cta-text-holder,
+  .edgtf-call-to-action-holder.edgtf-two-halves-columns .edgtf-cta-button-holder, .edgtf-call-to-action-holder.edgtf-two-thirds-columns .edgtf-cta-text-holder,
+  .edgtf-call-to-action-holder.edgtf-two-thirds-columns .edgtf-cta-button-holder, .edgtf-call-to-action-holder.edgtf-three-quarters-columns .edgtf-cta-text-holder,
+  .edgtf-call-to-action-holder.edgtf-three-quarters-columns .edgtf-cta-button-holder, .edgtf-call-to-action-holder.edgtf-four-fifths-columns .edgtf-cta-text-holder,
+  .edgtf-call-to-action-holder.edgtf-four-fifths-columns .edgtf-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edgtf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-countdown .countdown-row.countdown-show4 .countdown-section, .edgtf-countdown .countdown-row.countdown-show5 .countdown-section, .edgtf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+  .edgtf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edgtf-custom-font-holder.edgtf-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-two-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-three-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-four-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-five-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-six-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-one-column-alignment-left .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: left;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-one-column-alignment-right .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: right;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1280.edgtf-one-column-alignment-center .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-two-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-three-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-four-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-five-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-six-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-one-column-alignment-left .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: left;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-one-column-alignment-right .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: right;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-1024.edgtf-one-column-alignment-center .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-two-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-three-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-four-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-five-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-six-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-one-column-alignment-left .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: left;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-one-column-alignment-right .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: right;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-768.edgtf-one-column-alignment-center .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-two-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-three-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-four-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-five-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-six-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-one-column-alignment-left .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: left;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-one-column-alignment-right .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: right;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-680.edgtf-one-column-alignment-center .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-two-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-three-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-four-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-five-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-six-columns .edgtf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-one-column-alignment-left .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: left;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-one-column-alignment-right .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: right;
+  }
+  .edgtf-elements-holder.edgtf-responsive-mode-480.edgtf-one-column-alignment-center .edgtf-eh-item .edgtf-eh-item-content {
+    text-align: center;
+  }
+  .edgtf-elements-holder .edgtf-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Full Screen Image Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgtf-full-screen-image-slider .edgtf-fsis-content-image img {
+    max-width: 440px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-full-screen-image-slider .edgtf-fsis-slider .owl-dots {
+    bottom: calc(8% - 14px);
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-thumb-nav {
+    top: 16%;
+    height: 68%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-top,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-bottom {
+    height: 14%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-left,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-right {
+    width: 14%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-top,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-bottom {
+    height: 0;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-left,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-right {
+    width: 0;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-content-image img {
+    max-width: 370px;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-top,
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-bottom {
+    height: 16%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-right,
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-left {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-full-screen-image-slider .edgtf-fsis-content-image img {
+    max-width: 340px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-full-screen-image-slider .edgtf-fsis-slider .owl-nav {
+    display: none;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-slider .owl-dots {
+    bottom: calc(5% - 14px);
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-thumb-nav {
+    display: none;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-content-image-init .edgtf-fsis-image-left {
+    left: 2%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-content-image-init .edgtf-fsis-image-right {
+    right: 5%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-content-image-init .edgtf-fsis-subtitle {
+    margin: 15px 0 0;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-image-left {
+    left: calc(2% - 10px);
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-image-right {
+    right: calc(5% - 10px);
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-top,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-bottom {
+    height: 10%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-left,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-image-hover .edgtf-fsis-frame-right {
+    width: 10%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-image-left {
+    left: calc(2% - 25px);
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-image-right {
+    right: calc(5% - 25px);
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-top,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-bottom {
+    height: 0;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-left,
+  .edgtf-full-screen-image-slider .edgtf-fsis-item.edgtf-fsis-active-image .edgtf-fsis-frame-right {
+    width: 0;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-top,
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-bottom {
+    height: 10%;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-right,
+  .edgtf-full-screen-image-slider .edgtf-fsis-frame-left {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-full-screen-image-slider .edgtf-fsis-slider .owl-dots {
+    display: none;
+  }
+  .edgtf-full-screen-image-slider .edgtf-fsis-content-image {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Full Screen Image Slider shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Fullscreen Carousel shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgtf-fullscreen-carousel-holder .edgtf-fsc-next-trigger {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-fullscreen-carousel-holder .edgtf-fsc-next-trigger {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edgtf-fullscreen-carousel-holder .edgtf-fsc-item-text-holder-inner {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-fullscreen-carousel-holder .edgtf-fsc-item-text-holder-inner {
+    width: 50vw;
+  }
+}
+
+/* ==========================================================================
+   Fullscreen Carousel shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image:nth-child(6n+1) {
+    clear: none;
+  }
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-grid-sizer {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-grid-sizer {
+    width: 25%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 50%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-grid-sizer {
+    width: 25%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-four-columns .edgtf-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-two-columns .edgtf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-three-columns .edgtf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-four-columns .edgtf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 66.66667%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-grid-sizer {
+    width: 33.33333%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 66.66667%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-four-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-four-columns .edgtf-ig-grid-sizer {
+    width: 50%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-four-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-three-columns .edgtf-ig-image {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-grid-sizer {
+    width: 50%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-grid-sizer {
+    width: 50%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-three-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-three-columns .edgtf-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-three-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-two-columns .edgtf-ig-image {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-three-columns .edgtf-ig-image {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-four-columns .edgtf-ig-image {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-five-columns .edgtf-ig-image {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-grid.edgtf-ig-six-columns .edgtf-ig-image {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-two-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-two-columns .edgtf-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-two-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-three-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-three-columns .edgtf-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-three-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-four-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-four-columns .edgtf-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-four-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-five-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image,
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-grid-sizer {
+    width: 100%;
+  }
+  .edgtf-image-gallery .edgtf-ig-masonry.edgtf-ig-six-columns .edgtf-ig-image.edgtf-large-masonry-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edgtf-info-boxes-outer.edgtf-ib-four-columns .edgtf-info-boxes-inner {
+    width: 50%;
+    margin-bottom: 2px;
+  }
+  .edgtf-info-boxes-outer.edgtf-ib-four-columns .edgtf-info-boxes-inner:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-info-boxes-outer.edgtf-ib-three-columns .edgtf-info-boxes-inner, .edgtf-info-boxes-outer.edgtf-ib-four-columns .edgtf-info-boxes-inner {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgtf-pricing-tables.edgtf-four-columns .edgtf-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .edgtf-pricing-tables.edgtf-four-columns .edgtf-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edgtf-pricing-tables.edgtf-five-columns .edgtf-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .edgtf-pricing-tables.edgtf-five-columns .edgtf-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-pricing-tables.edgtf-three-columns .edgtf-price-table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-pricing-tables .edgtf-price-table {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgtf-process-holder.edgtf-responsive-1280 .edgtf-mark-horizontal-holder {
+    display: none;
+  }
+  .edgtf-process-holder.edgtf-responsive-1280 .edgtf-mark-vertical-holder {
+    display: block;
+  }
+  .edgtf-process-holder.edgtf-responsive-1280 .edgtf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .edgtf-process-holder.edgtf-responsive-1280 .edgtf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-process-holder.edgtf-responsive-1024 .edgtf-mark-horizontal-holder {
+    display: none;
+  }
+  .edgtf-process-holder.edgtf-responsive-1024 .edgtf-mark-vertical-holder {
+    display: block;
+  }
+  .edgtf-process-holder.edgtf-responsive-1024 .edgtf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .edgtf-process-holder.edgtf-responsive-1024 .edgtf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-process-holder.edgtf-responsive-768 .edgtf-mark-horizontal-holder {
+    display: none;
+  }
+  .edgtf-process-holder.edgtf-responsive-768 .edgtf-mark-vertical-holder {
+    display: block;
+  }
+  .edgtf-process-holder.edgtf-responsive-768 .edgtf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .edgtf-process-holder.edgtf-responsive-768 .edgtf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-process-holder.edgtf-responsive-680 .edgtf-mark-horizontal-holder {
+    display: none;
+  }
+  .edgtf-process-holder.edgtf-responsive-680 .edgtf-mark-vertical-holder {
+    display: block;
+  }
+  .edgtf-process-holder.edgtf-responsive-680 .edgtf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .edgtf-process-holder.edgtf-responsive-680 .edgtf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edgtf-process-holder.edgtf-responsive-480 .edgtf-mark-horizontal-holder {
+    display: none;
+  }
+  .edgtf-process-holder.edgtf-responsive-480 .edgtf-mark-vertical-holder {
+    display: block;
+  }
+  .edgtf-process-holder.edgtf-responsive-480 .edgtf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .edgtf-process-holder.edgtf-responsive-480 .edgtf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-section-title-holder.edgtf-st-two-columns {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-section-title-holder {
+    padding: 0 !important;
+  }
+  .edgtf-section-title-holder.edgtf-st-two-columns .edgtf-st-title,
+  .edgtf-section-title-holder.edgtf-st-two-columns .edgtf-st-text {
+    width: 100%;
+    float: none !important;
+    text-align: initial !important;
+  }
+  .edgtf-section-title-holder.edgtf-st-two-columns .edgtf-st-text {
+    margin: 14px 0 0;
+  }
+  .edgtf-section-title-holder.edgtf-st-disable-title-break .edgtf-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-tabs.edgtf-tabs-standard .edgtf-tabs-nav li a {
+    padding: 7px 21px;
+  }
+  .edgtf-tabs.edgtf-tabs-boxed .edgtf-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+  .edgtf-tabs.edgtf-tabs-boxed .edgtf-tabs-nav li a {
+    padding: 7px 18px;
+  }
+  .edgtf-tabs.edgtf-tabs-simple .edgtf-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tabs-nav {
+    width: 180px;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-tabs.edgtf-tabs-standard .edgtf-tabs-nav li {
+    display: block;
+    float: none;
+  }
+  .edgtf-tabs.edgtf-tabs-standard .edgtf-tabs-nav li a {
+    width: 100%;
+  }
+  .edgtf-tabs.edgtf-tabs-boxed .edgtf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+  .edgtf-tabs.edgtf-tabs-boxed .edgtf-tabs-nav li a {
+    width: 100%;
+  }
+  .edgtf-tabs.edgtf-tabs-simple .edgtf-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tabs-nav,
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tabs-nav {
+    border-right: 0;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-tabs.edgtf-tabs-simple .edgtf-tabs-nav {
+    padding: 0 0 20px;
+  }
+  .edgtf-tabs.edgtf-tabs-simple .edgtf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .edgtf-tabs.edgtf-tabs-simple .edgtf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .edgtf-tabs.edgtf-tabs-vertical .edgtf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  body.edgtf-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+  .edgtf-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+  .edgtf-vss-responsive {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/edge-core/assets/css/shortcodes-map-responsive.css.map */

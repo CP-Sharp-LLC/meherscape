@@ -1,0 +1,22 @@
+.edgtf-social-links-holder {
+    margin: 0 -8px;
+
+    .edgtf-single-social-link-holder {
+        display: inline-block;
+        padding: 0 8px;
+        position: relative;
+        margin-bottom: 10px;
+
+        a {
+            font-family: $default-heading-font;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: $first-main-color;
+
+            &:hover {
+                color: $default-text-color;
+            }
+        }
+    }
+}

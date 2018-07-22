@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Simple Shader style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-gallery-simple-shader {
+		
+		&.edgtf-pl-has-shadow {
+			
+			.edgtf-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.edgtf-pli-shader-holder {
+					opacity: 1;
+				}
+			}
+			
+			.edgtf-pl-item-inner {
+				overflow: hidden;
+			}
+		}
+		
+		.edgtf-pli-shader-holder {
+			@include edgtfAbsoluteHolderLayout();
+			opacity: 0;
+			@include edgtfTransition(opacity .2s ease-in-out);
+		}
+
+		&.edgtf-pl-skin-dark{
+			.edgtf-pli-shader-holder {
+				background-color: rgba(32, 32, 32, 0.5);
+			}
+		}
+
+		&.edgtf-pl-skin-light{
+			.edgtf-pli-shader-holder {
+				background-color: rgba(255, 255, 255, 0.5);
+			}	
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Simple Shader style - end
+   ========================================================================== */

@@ -1,0 +1,104 @@
+body {
+    color: #4c4c4c;
+    font-family: "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.73em;
+    background-color: #fff;
+    overflow-x: hidden !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 20px 0;
+    color: #202020;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: #202020;
+}
+
+h1 {
+    font-size: 59px;
+    line-height: 1.12em;
+}
+
+h2 {
+    font-size: 39px;
+    line-height: 1.15em;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 1.29em;
+}
+
+h5 {
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.53em;
+}
+
+h6 {
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    line-height: 1.63em;
+    font-style: italic;
+}
+
+a,
+p a {
+    color: #202020;
+    text-decoration: none;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+a:hover,
+p a:hover {
+    color: #202020;
+}
+
+p {
+    margin: 10px 0;
+}

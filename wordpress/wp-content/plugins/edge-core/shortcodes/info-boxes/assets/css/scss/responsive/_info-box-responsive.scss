@@ -1,0 +1,32 @@
+@include ipad-portrait {
+
+    .edgtf-info-boxes-outer {
+
+        &.edgtf-ib-four-columns{
+
+            .edgtf-info-boxes-inner{
+                width: 50%;
+                margin-bottom: 2px;
+
+                &:nth-child(2n+1) {
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .edgtf-info-boxes-outer {
+
+        &.edgtf-ib-three-columns,
+        &.edgtf-ib-four-columns {
+
+            .edgtf-info-boxes-inner{
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+}

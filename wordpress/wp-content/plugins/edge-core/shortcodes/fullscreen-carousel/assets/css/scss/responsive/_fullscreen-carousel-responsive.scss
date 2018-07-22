@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Fullscreen Carousel shortcode responsive style - begin
+   ========================================================================== */
+	.edgtf-fullscreen-carousel-holder {
+		.edgtf-fsc-next-trigger {
+			@include laptop-landscape-large {
+				width: 20%;
+			}
+
+			@include laptop-landscape-medium {
+				width: 25%;
+			}
+		}
+
+		.edgtf-fsc-item-text-holder-inner  {
+			@include laptop-landscape-large {
+				width: 40vw;
+			}
+
+			@include ipad-landscape {
+				width: 50vw;
+			}
+		}
+	}	
+/* ==========================================================================
+   Fullscreen Carousel shortcode responsive style - end
+   ========================================================================== */
